@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "morehoney",
+	"version": "${version}",
+	"name": "More Honey",
+	"description": "Ever thought that Minecraft needed more honey food? Then this is your mod! This mod adds more than 5+ honey Foods.",
+	"authors": [
+		"legopitstop"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "",
+	"icon": "assets/morehoney/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.legopitstop.morehoney.MoreHoney"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"morefood": "*"
+	},
+	"suggests": {}
+}

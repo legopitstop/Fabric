@@ -1,32 +1,29 @@
 package com.legopitstop.morehoney.registry;
 
 import com.legopitstop.morehoney.MoreHoney;
-import com.legopitstop.morehoney.item.MoreHoneyFoodComponents;
+import com.legopitstop.morehoney.item.ModFoodComponents;
+import com.legopitstop.morehoney.item.ModHoneyItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class MoreHoneyItems {
+public class ModItems {
     // Create Items
-    public static Item HONEY_PRESS = new BlockItem(MoreHoneyBlocks.HONEY_PRESS, new FabricItemSettings());
-    public static Item HONEY_COOKED_BEEF = new Item(new FabricItemSettings().food(MoreHoneyFoodComponents.HONEY_COOKED_BEEF));
-    public static Item HONEY_COOKED_CHICKEN = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_COOKED_MUTTON = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_COOKED_PORKCHOP = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_COOKIE = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_LEMON_TEA = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_PANCAKES = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_SANDWICH = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_TOASTIE = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
-    public static Item HONEY_WAFFLE = new Item(new FabricItemSettings().food(FoodComponents.APPLE));
+    public static final Item HONEY_LEMON_TEA = new ModHoneyItem(new FabricItemSettings().maxCount(16).food(ModFoodComponents.HONEY_LEMON_TEA));
+    public static final Item HONEY_COOKED_BEEF = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_COOKED_BEEF));
+    public static final Item HONEY_COOKED_CHICKEN = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_COOKED_CHICKEN));
+    public static final Item HONEY_COOKED_MUTTON = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_COOKED_MUTTON));
+    public static final Item HONEY_COOKED_PORKCHOP = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_COOKED_PORKCHOP));
+    public static final Item HONEY_COOKIE = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_COOKIE));
+    public static final Item HONEY_PANCAKES = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_PANCAKES));
+    public static final Item HONEY_SANDWICH = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_SANDWICH));
+    public static final Item HONEY_TOASTIE = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_TOASTIE));
+    public static final Item HONEY_WAFFLE = new ModHoneyItem(new FabricItemSettings().food(ModFoodComponents.HONEY_WAFFLE));
 
     public static void register() {
         // Register Items
-        Registry.register(Registries.ITEM, new Identifier(MoreHoney.MOD_ID, "honey_press"), HONEY_PRESS);
         Registry.register(Registries.ITEM, new Identifier(MoreHoney.MOD_ID, "honey_cooked_beef"), HONEY_COOKED_BEEF);
         Registry.register(Registries.ITEM, new Identifier(MoreHoney.MOD_ID, "honey_cooked_chicken"), HONEY_COOKED_CHICKEN);
         Registry.register(Registries.ITEM, new Identifier(MoreHoney.MOD_ID, "honey_cooked_mutton"), HONEY_COOKED_MUTTON);
