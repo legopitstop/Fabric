@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "morehoney:block/honey_press_bottom",
+    "east": "morehoney:block/honey_press_side",
+    "north": "morehoney:block/honey_press_front",
+    "south": "morehoney:block/honey_press_side",
+    "up": "morehoney:block/honey_press_top",
+    "west": "morehoney:block/honey_press_front",
+    "particle": "#north"
+  }
+}

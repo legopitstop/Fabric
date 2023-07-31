@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "minecraft:honey_bottle"
+        },
+        "P": {
+            "item": "morefood:pancakes"
+        },
+        "X": {
+            "item": "morefood:butter"
+        }
+    },
+    "pattern": [
+        "X",
+        "#",
+        "P"
+    ],
+    "result": {
+        "item": "morehoney:honey_pancakes"
+    },
+    "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "tag": "minecraft:planks"
+        },
+        "H": {
+            "item": "minecraft:honeycomb"
+        }
+    },
+    "pattern": [
+        "HH",
+        "##",
+        "##"
+    ],
+    "result": {
+        "item": "morehoney:honey_press"
+    },
+    "show_notification": true
+}

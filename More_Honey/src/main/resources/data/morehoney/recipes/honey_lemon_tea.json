@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "minecraft:water_bucket"
+        },
+        "P": {
+            "item": "minecraft:honey_bottle"
+        },
+        "X": {
+            "item": "morefood:hot_beverage_cup"
+        }
+    },
+    "pattern": [
+        "#",
+        "P",
+        "X"
+    ],
+    "result": {
+        "item": "morehoney:honey_lemon_tea"
+    },
+    "show_notification": true
+}

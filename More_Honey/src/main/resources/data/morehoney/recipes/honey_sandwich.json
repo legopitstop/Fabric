@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "morefood:butter"
+        },
+        "P": {
+            "item": "morefood:cut_bread"
+        },
+        "X": {
+            "item": "minecraft:honey_bottle"
+        }
+    },
+    "pattern": [
+        " # ",
+        "PXP"
+    ],
+    "result": {
+        "item": "morehoney:honey_sandwich"
+    },
+    "show_notification": true
+}

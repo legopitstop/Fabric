@@ -1,0 +1,61 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "morehoney:honey_lemon_tea"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_bucket": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:bucket"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_honey_bottle": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:honey_bottle"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_morefood_hot_beverage_cup": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "morefood:hot_beverage_cup"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_bucket",
+            "has_honey_bottle",
+            "has_morefood_hot_beverage_cup"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "morehoney:honey_lemon_tea"
+        ]
+    },
+    "sends_telemetry_event": false
+}

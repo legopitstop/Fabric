@@ -1,0 +1,61 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "morehoney:honey_pancakes"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_honey_bottle": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:honey_bottle"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_morefood_pancakes": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "morefood:pancakes"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_morefood_butter": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "morefood:butter"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_honey_bottle",
+            "has_morefood_pancakes",
+            "has_morefood_butter"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "morehoney:honey_pancakes"
+        ]
+    },
+    "sends_telemetry_event": false
+}
