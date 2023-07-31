@@ -8,10 +8,10 @@
 		"legopitstop"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://legopitstop.weebly.com",
+		"sources": "https://github.com/legopitstop/Fabric"
 	},
-	"license": "",
+	"license": "CC-BY-NC-ND-4.0",
 	"icon": "assets/morehoney/icon.png",
 	"environment": "*",
 	"entrypoints": {
