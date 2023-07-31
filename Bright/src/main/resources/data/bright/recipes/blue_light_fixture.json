@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "light_fixture",
+    "pattern": [
+        "CC",
+        "GC",
+        "GC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:blue_concrete"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        }
+    },
+    "result": {
+        "item": "bright:blue_light_fixture"
+    },
+    "show_notification": true
+}

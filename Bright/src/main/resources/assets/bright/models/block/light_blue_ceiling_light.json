@@ -1,0 +1,7 @@
+{
+	"parent": "bright:block/template_ceiling_light",
+	"textures": {
+		"base": "minecraft:block/light_blue_concrete",
+		"light": "bright:block/light/light_blue_light"
+	}
+}

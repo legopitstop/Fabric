@@ -1,0 +1,48 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "bright:pink_ceiling_light"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_pink_concrete": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:pink_concrete"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_glowstone_dust": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:glowstone_dust"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_pink_concrete",
+            "has_glowstone_dust"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "bright:pink_ceiling_light"
+        ]
+    },
+    "sends_telemetry_event": false
+}

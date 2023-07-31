@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "lit=false,facing=north": {
+      "model": "bright:block/diamond_light_blue_candle_stick",
+      "y": -90
+    },
+    "lit=false,facing=south": {
+      "model": "bright:block/diamond_light_blue_candle_stick",
+      "y": 90
+    },
+    "lit=false,facing=east": {
+      "model": "bright:block/diamond_light_blue_candle_stick",
+      "y": 0
+    },
+    "lit=false,facing=west": {
+      "model": "bright:block/diamond_light_blue_candle_stick",
+      "y": 180
+    },
+    "lit=true,facing=north": {
+      "model": "bright:block/diamond_light_blue_candle_stick_lit",
+      "y": -90
+    },
+    "lit=true,facing=south": {
+      "model": "bright:block/diamond_light_blue_candle_stick_lit",
+      "y": 90
+    },
+    "lit=true,facing=east": {
+      "model": "bright:block/diamond_light_blue_candle_stick_lit",
+      "y": 0
+    },
+    "lit=true,facing=west": {
+      "model": "bright:block/diamond_light_blue_candle_stick_lit",
+      "y": 180
+    }
+  }
+}

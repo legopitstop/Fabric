@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "iron_candle_stick",
+  "pattern": [
+    "IC ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:purple_candle"
+    }
+  },
+  "result": {
+    "item": "bright:iron_purple_candle_stick"
+  },
+  "show_notification": true
+}

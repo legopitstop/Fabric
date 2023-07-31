@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "diamond_candle_stick",
+  "pattern": [
+    "IC ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "minecraft:green_candle"
+    }
+  },
+  "result": {
+    "item": "bright:diamond_green_candle_stick"
+  },
+  "show_notification": true
+}

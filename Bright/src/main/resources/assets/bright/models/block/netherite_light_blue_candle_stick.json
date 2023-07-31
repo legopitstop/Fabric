@@ -1,0 +1,7 @@
+{
+	"parent": "bright:block/template_candle_stick",
+	"textures": {
+		"candle": "minecraft:block/light_blue_candle",
+		"candle_stick": "bright:block/candle_stick/netherite_candle_stick"
+	}
+}

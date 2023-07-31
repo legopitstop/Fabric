@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+	  {
+		"bonus_rolls": 0.0,
+		"conditions": [
+		  {
+			"condition": "minecraft:survives_explosion"
+		  }
+		],
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "bright:gold_orange_candle_stick"
+		  }
+		],
+		"rolls": 1.0
+	  }
+	],
+	"random_sequence": "bright:blocks/gold_orange_candle_stick"
+  }

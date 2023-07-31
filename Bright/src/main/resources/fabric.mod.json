@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "bright",
+	"version": "${version}",
+	"name": "Bright",
+	"description": "The only light addon that you will ever need!! Bright Includes 5 unique lighting blocks to light up your world.",
+	"authors": [
+		"legopitstop"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC-BY-NC-ND-4.0",
+	"icon": "assets/bright/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.legopitstop.bright.Bright"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "copper_candle_stick",
+  "pattern": [
+    "IC ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "minecraft:brown_candle"
+    }
+  },
+  "result": {
+    "item": "bright:copper_brown_candle_stick"
+  },
+  "show_notification": true
+}

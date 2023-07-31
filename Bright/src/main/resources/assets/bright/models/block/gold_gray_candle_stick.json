@@ -1,0 +1,7 @@
+{
+	"parent": "bright:block/template_candle_stick",
+	"textures": {
+		"candle": "minecraft:block/gray_candle",
+		"candle_stick": "bright:block/candle_stick/gold_candle_stick"
+	}
+}

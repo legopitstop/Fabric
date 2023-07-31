@@ -1,0 +1,7 @@
+{
+	"parent": "bright:block/template_floor_light",
+	"textures": {
+		"base": "minecraft:block/red_concrete",
+		"light": "bright:block/light/red_light_lit"
+	}
+}

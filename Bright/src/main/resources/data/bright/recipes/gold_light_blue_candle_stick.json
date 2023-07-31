@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gold_candle_stick",
+  "pattern": [
+    "IC ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:light_blue_candle"
+    }
+  },
+  "result": {
+    "item": "bright:gold_light_blue_candle_stick"
+  },
+  "show_notification": true
+}

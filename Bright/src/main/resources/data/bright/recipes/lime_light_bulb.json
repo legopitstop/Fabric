@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "light_bulb",
+    "pattern": [
+        " G ",
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:lime_concrete"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        }
+    },
+    "result": {
+        "item": "bright:lime_light_bulb"
+    },
+    "show_notification": true
+}

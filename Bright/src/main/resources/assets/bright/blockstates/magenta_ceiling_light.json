@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "lit=false": {
+        "model": "bright:block/magenta_ceiling_light"
+      },
+      "lit=true": {
+        "model": "bright:block/magenta_ceiling_light_on"
+      }
+    }
+  }

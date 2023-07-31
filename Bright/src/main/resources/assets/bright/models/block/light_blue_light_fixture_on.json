@@ -1,0 +1,7 @@
+{
+	"parent": "bright:block/template_light_fixture",
+	"textures": {
+		"base": "minecraft:block/light_blue_concrete",
+		"light": "bright:block/light/light_blue_light_lit"
+	}
+}

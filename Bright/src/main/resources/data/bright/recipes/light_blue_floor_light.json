@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "floor_light",
+    "pattern": [
+        "CGC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:light_blue_concrete"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        }
+    },
+    "result": {
+        "item": "bright:light_blue_floor_light"
+    },
+    "show_notification": true
+}

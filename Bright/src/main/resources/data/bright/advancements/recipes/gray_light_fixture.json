@@ -1,0 +1,48 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "bright:gray_light_fixture"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_gray_concrete": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:gray_concrete"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_glowstone_dust": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:glowstone_dust"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_gray_concrete",
+            "has_glowstone_dust"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "bright:gray_light_fixture"
+        ]
+    },
+    "sends_telemetry_event": false
+}

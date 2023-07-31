@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "lit=false,facing=up": {
+      "model": "bright:block/magenta_light_bulb"
+    },
+    "lit=false,facing=down": {
+      "model": "bright:block/magenta_light_bulb",
+      "x": 180
+    },
+    "lit=false,facing=north": {
+      "model": "bright:block/magenta_light_bulb",
+      "y": 0,
+      "x": 90
+    },
+    "lit=false,facing=south": {
+      "model": "bright:block/magenta_light_bulb",
+      "y": 180,
+      "x": 90
+    },
+    "lit=false,facing=east": {
+      "model": "bright:block/magenta_light_bulb",
+      "y": 90,
+      "x": 90
+    },
+    "lit=false,facing=west": {
+      "model": "bright:block/magenta_light_bulb",
+      "y": 270,
+      "x": 90
+    },
+    "lit=true,facing=up": {
+      "model": "bright:block/magenta_light_bulb_on"
+    },
+    "lit=true,facing=down": {
+      "model": "bright:block/magenta_light_bulb_on",
+      "x": 180
+    },
+    "lit=true,facing=north": {
+      "model": "bright:block/magenta_light_bulb_on",
+      "y": 0,
+      "x": 90
+    },
+    "lit=true,facing=south": {
+      "model": "bright:block/magenta_light_bulb_on",
+      "y": 180,
+      "x": 90
+    },
+    "lit=true,facing=east": {
+      "model": "bright:block/magenta_light_bulb_on",
+      "y": 90,
+      "x": 90
+    },
+    "lit=true,facing=west": {
+      "model": "bright:block/magenta_light_bulb_on",
+      "y": 270,
+      "x": 90
+    }
+  }
+}
