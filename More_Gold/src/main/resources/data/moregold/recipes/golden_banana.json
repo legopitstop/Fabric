@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "minecraft:gold_ingot"
+        },
+        "P": {
+            "item": "morefood:banana"
+        }
+    },
+    "pattern": [
+        "###",
+        "#P#",
+        "###"
+    ],
+    "result": {
+        "item": "moregold:golden_banana"
+    },
+    "show_notification": true
+}

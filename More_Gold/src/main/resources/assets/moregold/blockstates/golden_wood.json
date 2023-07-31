@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "moregold:block/golden_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "moregold:block/golden_wood"
+    },
+    "axis=z": {
+      "model": "moregold:block/golden_wood",
+      "x": 90
+    }
+  }
+}

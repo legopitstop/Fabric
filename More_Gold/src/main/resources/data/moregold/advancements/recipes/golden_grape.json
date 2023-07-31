@@ -1,0 +1,48 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "moregold:golden_grape"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_gold_ingot": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:gold_ingot"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_morefood_grape": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "morefood:grape"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_gold_ingot",
+            "has_morefood_grape"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "moregold:golden_grape"
+        ]
+    },
+    "sends_telemetry_event": false
+}

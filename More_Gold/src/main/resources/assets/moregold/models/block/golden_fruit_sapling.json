@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "moregold:block/golden_fruit_sapling"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moregold:block/golden_fruit_sapling"
+  }
+}
