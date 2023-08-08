@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "spawnercraft",
+	"version": "${version}",
+	"name": "Spawner Craft",
+	"description": "This mod adds in recipes for spawn eggs. You can use the spawn egg to change any spawner to spawn that mob. All recipes are fair and not too overpowered.",
+	"authors": [
+		"legopitstop"
+	],
+	"contact": {
+		"homepage": "https://legopitstop.weebly.com",
+		"sources": "https://github.com/legopitstop/Fabric"
+	},
+	"license": "CC-BY-NC-ND-4.0",
+	"icon": "assets/spawnercraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.legopitstop.spawnercraft.SpawnerCraft"
+		],
+		"fabric-datagen": [
+			"com.legopitstop.spawnercraft.SpawnerCraftDataGenerator"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}

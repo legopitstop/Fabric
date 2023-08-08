@@ -27,5 +27,15 @@
 		"fabric-api": "*",
 		"morefood": "*"
 	},
-	"suggests": {}
+	"suggests": {},
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "morefood",
+				"name": "Lot's More Food",
+				"description": "Adds over 200+ new foods to your world!",
+				"icon": "assets/morefood/icon.png"
+			}
+		}
+	}
 }

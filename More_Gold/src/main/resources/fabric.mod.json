@@ -19,7 +19,10 @@
 			"com.legopitstop.moregold.MoreGold"
 		],
 		"fabric-datagen": [
-			"com.legopitstop.moregold.ModDataGenerator"
+			"com.legopitstop.moregold.MoreGoldDataGenerator"
+		],
+		"client": [
+			"com.legopitstop.moregold.MoreGoldClient"
 		]
 	},
 	"mixins": [],
@@ -30,5 +33,15 @@
 		"fabric-api": "*",
 		"morefood": "*"
 	},
-	"suggests": {}
+	"suggests": {},
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "morefood",
+				"name": "Lot's More Food",
+				"description": "Adds over 200+ new foods to your world!",
+				"icon": "assets/morefood/icon.png"
+			}
+		}
+	}
 }

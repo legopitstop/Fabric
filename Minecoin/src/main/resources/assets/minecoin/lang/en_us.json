@@ -1,0 +1,60 @@
+{
+    "item.minecoin.minecoin": "Minecoin",
+    "item.minecoin.debit_card": "Debit Card",
+
+    "item.minecoin.debit_card.desc": "Owner: %s",
+    "item.minecoin.debit_card.desc2": "Card Number: %s",
+    "item.minecoin.debit_card.desc3": "Valid Thru: %s",
+    "item.minecoin.debit_card.desc4": "CSC: %s",
+    "item.minecoin.key": "Key",
+    "item.minecoin.key.desc": "Used to prevent other players from breaking ATMs & Minecoin Registers",
+    "block.minecoin.automatic_teller_machine": "ATM",
+    "block.minecoin.minecoin_register": "Minecoin Register",
+
+    "block.minecoin.white_piggy_bank": "White Piggy Bank",
+    "block.minecoin.light_gray_piggy_bank": "Light Gray Piggy Bank",
+    "block.minecoin.gray_piggy_bank": "Gray Piggy Bank",
+    "block.minecoin.black_piggy_bank": "Black Piggy Bank",
+    "block.minecoin.brown_piggy_bank": "Brown Piggy Bank",
+    "block.minecoin.red_piggy_bank": "Red Piggy Bank",
+    "block.minecoin.orange_piggy_bank": "Orange Piggy Bank",
+    "block.minecoin.yellow_piggy_bank": "Yellow Piggy Bank",
+    "block.minecoin.lime_piggy_bank": "Lime Piggy Bank",
+    "block.minecoin.green_piggy_bank": "Green Piggy Bank",
+    "block.minecoin.cyan_piggy_bank": "Cyan Piggy Bank",
+    "block.minecoin.light_blue_piggy_bank": "Light Blue Piggy Bank",
+    "block.minecoin.blue_piggy_bank": "Blue Piggy Bank",
+    "block.minecoin.purple_piggy_bank": "Purple Piggy Bank",
+    "block.minecoin.magenta_piggy_bank": "Magenta Piggy Bank",
+    "block.minecoin.pink_piggy_bank": "Pink Piggy Bank",
+
+    "commands.balance.success": "You have %s",
+
+    "commands.withdraw.failed": "Could not withdraw %s as you only have %s",
+    "commands.withdraw.success": "Withdrew %s (now %s)",
+    "commands.deposit.failed": "Could not deposit %s as you only have %s Minecoins in your inventory",
+    "commands.deposit.success": "Deposited %s (now %s)",
+
+    "commands.coin.withdraw.failed": "Could not withdraw %s as %s only has %s",
+    "commands.coin.withdraw.success": "Withdrew %s from %s (now %s)",
+
+    "commands.coin.deposit.success": "Deposited %s to %s (now %s)",
+
+    "commands.coin.get.success": "%s has %s",
+
+    "commands.coin.set.success.single": "Set %s to %s",
+    "commands.coin.set.success.multiple": "Set %s to %s players",
+
+    "commands.coin.add.success.single": "Added %s to %s (now %s)",
+    "commands.coin.add.success.multiple": "Added %s to %s players",
+
+    "commands.coin.remove.success.single": "Removed %s from %s (now %s)",
+    "commands.coin.remove.success.multiple": "Removed %s from %s players",
+
+    "commands.coin.pin.get.success": "%s has PIN %s",
+    "commands.coin.pin.set.success.single": "Updated PIN for %s",
+    "commands.coin.pin.set.success.multiple": "Updated PINs for %s players",
+
+    "commands.pin.success": "Your PIN has been changed.",
+    "commands.pin.success.desc": "PIN: %s"
+}

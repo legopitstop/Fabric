@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "minecoin:block/lime_piggy_bank",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "minecoin:block/lime_piggy_bank"
+    },
+    "facing=south": {
+      "model": "minecoin:block/lime_piggy_bank",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecoin:block/lime_piggy_bank",
+      "y": 270
+    }
+  }
+}

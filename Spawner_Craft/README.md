@@ -6,14 +6,14 @@ This mod adds in recipes for spawn eggs. You can use the spawn egg to change any
 
 ## Mod Data
 
-| Key         | Value         |
-|-------------|---------------|
-| supported   | `yes`         |
-| version     | `1.0.0`       |
-| mc_version  | `1.20.1`      |
-| mod_id      | `spawnercraft`|
-| client_side | `required`    |
-| server_side | `required`    |
+| Key         | Value          |
+|-------------|----------------|
+| supported   | `yes`          |
+| version     | `1.0.0`        |
+| mc_version  | `1.20.1`       |
+| mod_id      | `spawnercraft` |
+| client_side | `unsupported`  |
+| server_side | `required`     |
 
 ## LINKS
 - [Download](DOWNLOAD)

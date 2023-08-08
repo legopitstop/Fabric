@@ -1,0 +1,8 @@
+{
+    "parent": "minecoin:block/template_automatic_teller_machine",
+    "textures": {
+        "base": "minecraft:block/smooth_stone",
+        "accent": "minecoin:block/atm_screen",
+        "misc": "minecoin:block/misc"
+    }
+}

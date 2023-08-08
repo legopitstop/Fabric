@@ -1,10 +1,12 @@
 package com.legopitstop.moregold;
 
-import com.legopitstop.moregold.block.ModFlammableBlockRegistry;
-import com.legopitstop.moregold.registry.ModBlocks;
-import com.legopitstop.moregold.registry.ModItemGroups;
-import com.legopitstop.moregold.registry.ModItems;
+import com.legopitstop.moregold.block.MoreGoldFlammableBlockRegistry;
+import com.legopitstop.moregold.registry.MoreGoldBlocks;
+import com.legopitstop.moregold.registry.MoreGoldItemGroups;
+import com.legopitstop.moregold.registry.MoreGoldItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 
 public class MoreGold implements ModInitializer {
@@ -12,12 +14,20 @@ public class MoreGold implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModBlocks.register();
-		ModItems.register();
-		ModItemGroups.register();
+		MoreGoldBlocks.register();
+		MoreGoldItems.register();
+		MoreGoldItemGroups.register();
 
-		ModFlammableBlockRegistry.register();
-		StrippableBlockRegistry.register(ModBlocks.GOLDEN_LOG, ModBlocks.STRIPPED_GOLDEN_LOG);
-		StrippableBlockRegistry.register(ModBlocks.GOLDEN_WOOD, ModBlocks.STRIPPED_GOLDEN_WOOD);
+		MoreGoldFlammableBlockRegistry.register();
+		StrippableBlockRegistry.register(MoreGoldBlocks.GOLDEN_LOG, MoreGoldBlocks.STRIPPED_GOLDEN_LOG);
+		StrippableBlockRegistry.register(MoreGoldBlocks.GOLDEN_WOOD, MoreGoldBlocks.STRIPPED_GOLDEN_WOOD);
+
+		FuelRegistry.INSTANCE.add(MoreGoldItems.GOLDEN_LOG, 300);
+		FuelRegistry.INSTANCE.add(MoreGoldItems.STRIPPED_GOLDEN_LOG, 300);
+		FuelRegistry.INSTANCE.add(MoreGoldItems.GOLDEN_WOOD, 300);
+		FuelRegistry.INSTANCE.add(MoreGoldItems.STRIPPED_GOLDEN_WOOD, 300);
+
+		CompostingChanceRegistry.INSTANCE.add(MoreGoldItems.GOLDEN_FRUIT_SAPLING, 0.3F);
+		CompostingChanceRegistry.INSTANCE.add(MoreGoldItems.GOLDEN_FRUIT_SEEDS, 0.3F);
 	}
 }
