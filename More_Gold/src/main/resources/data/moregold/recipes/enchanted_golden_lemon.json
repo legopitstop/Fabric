@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "minecraft:gold_block"
+        },
+        "P": {
+            "item": "moregold:golden_lemon"
+        }
+    },
+    "pattern": [
+        "###",
+        "#P#",
+        "###"
+    ],
+    "result": {
+        "item": "moregold:enchanted_golden_lemon"
+    },
+    "show_notification": true
+}

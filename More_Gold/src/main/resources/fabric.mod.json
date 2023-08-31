@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://legopitstop.weebly.com",
-		"sources": "https://github.com/legopitstop/Fabric"
+		"sources": "https://github.com/legopitstop/Fabric",
+		"issues": "https://github.com/legopitstop/Fabric/issues"
 	},
 	"license": "CC-BY-NC-ND-4.0",
 	"icon": "assets/moregold/icon.png",
@@ -31,7 +32,7 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-		"morefood": "*"
+		"morefood": ">=0.0.2"
 	},
 	"suggests": {},
 	"custom": {

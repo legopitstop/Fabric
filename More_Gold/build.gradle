@@ -76,7 +76,7 @@ dependencies {
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
 	// Lots More Food
-	modImplementation "maven.modrinth:lots-more-food:fabric-0.0.1"
+	modImplementation "maven.modrinth:lots-more-food:fabric-${project.morefood_version}"
 }
 
 

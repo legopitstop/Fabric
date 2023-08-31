@@ -1,15 +1,17 @@
 package com.legopitstop.moregold.registry;
 
 import com.legopitstop.moregold.MoreGold;
+import com.legopitstop.moregold.item.EnchantedGoldenItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.FoodComponents;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
+// TODO
+// - Golden crop should only drop 1 item
+// - Golden Logs should have a chance to drop a nugget instead of log?
 public class MoreGoldItems {
     // Create Items
     public static final Item GOLDEN_LOG = new BlockItem(MoreGoldBlocks.GOLDEN_LOG, new FabricItemSettings());
@@ -25,6 +27,12 @@ public class MoreGoldItems {
     public static final Item GOLDEN_ORANGE = new Item(new FabricItemSettings().food(FoodComponents.GOLDEN_APPLE).rarity(Rarity.RARE));
     public static final Item GOLDEN_STRAWBERRY = new Item(new FabricItemSettings().food(FoodComponents.GOLDEN_APPLE).rarity(Rarity.RARE));
 
+    public static final Item ENCHANTED_GOLDEN_BANANA = new EnchantedGoldenItem(new FabricItemSettings().food(FoodComponents.ENCHANTED_GOLDEN_APPLE).rarity(Rarity.EPIC));
+    public static final Item ENCHANTED_GOLDEN_GRAPE = new EnchantedGoldenItem(new FabricItemSettings().food(FoodComponents.ENCHANTED_GOLDEN_APPLE).rarity(Rarity.EPIC));
+    public static final Item ENCHANTED_GOLDEN_LEMON = new EnchantedGoldenItem(new FabricItemSettings().food(FoodComponents.ENCHANTED_GOLDEN_APPLE).rarity(Rarity.EPIC));
+    public static final Item ENCHANTED_GOLDEN_ORANGE = new EnchantedGoldenItem(new FabricItemSettings().food(FoodComponents.ENCHANTED_GOLDEN_APPLE).rarity(Rarity.EPIC));
+    public static final Item ENCHANTED_GOLDEN_STRAWBERRY = new EnchantedGoldenItem(new FabricItemSettings().food(FoodComponents.ENCHANTED_GOLDEN_APPLE).rarity(Rarity.EPIC));
+
     public static void register() {
         // Register Items
         Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "golden_wood"), GOLDEN_WOOD);
@@ -38,5 +46,10 @@ public class MoreGoldItems {
         Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "golden_lemon"), GOLDEN_LEMON);
         Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "golden_orange"), GOLDEN_ORANGE);
         Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "golden_strawberry"), GOLDEN_STRAWBERRY);
+        Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "enchanted_golden_banana"), ENCHANTED_GOLDEN_BANANA);
+        Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "enchanted_golden_grape"), ENCHANTED_GOLDEN_GRAPE);
+        Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "enchanted_golden_lemon"),ENCHANTED_GOLDEN_LEMON);
+        Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "enchanted_golden_orange"), ENCHANTED_GOLDEN_ORANGE);
+        Registry.register(Registries.ITEM, new Identifier(MoreGold.MOD_ID, "enchanted_golden_strawberry"),ENCHANTED_GOLDEN_STRAWBERRY);
     }
 }

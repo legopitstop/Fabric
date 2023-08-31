@@ -20,10 +20,15 @@ public class MoreGoldItemGroups {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(MoreGoldItems.GOLDEN_BANANA);
+            entries.add(MoreGoldItems.ENCHANTED_GOLDEN_BANANA);
             entries.add(MoreGoldItems.GOLDEN_GRAPE);
+            entries.add(MoreGoldItems.ENCHANTED_GOLDEN_GRAPE);
             entries.add(MoreGoldItems.GOLDEN_LEMON);
+            entries.add(MoreGoldItems.ENCHANTED_GOLDEN_LEMON);
             entries.add(MoreGoldItems.GOLDEN_ORANGE);
+            entries.add(MoreGoldItems.ENCHANTED_GOLDEN_ORANGE);
             entries.add(MoreGoldItems.GOLDEN_STRAWBERRY);
+            entries.add(MoreGoldItems.ENCHANTED_GOLDEN_STRAWBERRY);
         });
     }
 }
