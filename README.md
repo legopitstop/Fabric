@@ -4,6 +4,7 @@
 - [Bright](./Bright/README.md)
 - [More Gold](./More_Gold/README.md)
 - [More Honey](./More_Honey/README.md)
+- [Lightning Bolt Glass](./Lightning_Bolt_Glass/README.md)
 
 - Coming Soon!
     - [Basalt Blocks](./Basalt_Blocks/README.md)
