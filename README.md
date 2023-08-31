@@ -5,10 +5,10 @@
 - [More Gold](./More_Gold/README.md)
 - [More Honey](./More_Honey/README.md)
 - [Lightning Bolt Glass](./Lightning_Bolt_Glass/README.md)
+- [Canned](./Canned/README.md)
 
-- Coming Soon!
+- Planned:
     - [Basalt Blocks](./Basalt_Blocks/README.md)
-    - [Canned](./Canned/README.md)
     - [Construction Blocks](./Construction_Blocks/README.md)
     - [More Blocks](./More_Blocks/README.md)
     - [More Pumpkins](./More_Pumpkins/README.md)
