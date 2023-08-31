@@ -1,7 +1,0 @@
-{
-    "parent": "minecoin:block/template_minecoin_register",
-    "textures": {
-        "base": "minecraft:block/gold_block",
-        "accent": "minecraft:block/black_concrete"
-    }
-}

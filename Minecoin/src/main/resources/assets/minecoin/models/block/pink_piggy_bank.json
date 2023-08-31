@@ -1,7 +1,0 @@
-{
-  "parent": "minecoin:block/template_piggy_bank",
-  "textures": {
-  "particle": "minecraft:block/pink_concrete",
-      "texture": "minecoin:block/pink_piggy_bank"
-  }
-}
