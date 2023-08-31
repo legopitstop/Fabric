@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shapeless","group":"canned:cans", "ingredients": [{"item": "canned:can"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}, {"item": "minecraft:cake"}], "result": {"item": "canned:cake_can"}}

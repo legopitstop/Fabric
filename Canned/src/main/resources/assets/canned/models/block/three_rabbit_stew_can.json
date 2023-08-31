@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_three_can",
+	"textures": {
+		"texture": "canned:block/rabbit_stew_can"
+	}
+}

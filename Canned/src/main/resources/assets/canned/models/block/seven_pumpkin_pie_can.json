@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_seven_can",
+	"textures": {
+		"texture": "canned:block/pumpkin_pie_can"
+	}
+}

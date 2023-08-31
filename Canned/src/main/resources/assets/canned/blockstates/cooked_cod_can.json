@@ -1,0 +1,140 @@
+{
+    "variants": {
+      "cans=1": [
+        {
+          "model": "canned:block/one_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/one_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/one_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/one_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=2": [
+        {
+          "model": "canned:block/two_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/two_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/two_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/two_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=3": [
+        {
+          "model": "canned:block/three_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/three_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/three_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/three_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=4": [
+        {
+          "model": "canned:block/four_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/four_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/four_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/four_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=5": [
+        {
+          "model": "canned:block/five_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/five_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/five_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/five_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=6": [
+        {
+          "model": "canned:block/six_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/six_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/six_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/six_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=7": [
+        {
+          "model": "canned:block/seven_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/seven_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/seven_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/seven_cooked_cod_can",
+          "y": 270
+        }
+      ],
+      "cans=8": [
+        {
+          "model": "canned:block/eight_cooked_cod_can"
+        },
+        {
+          "model": "canned:block/eight_cooked_cod_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/eight_cooked_cod_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/eight_cooked_cod_can",
+          "y": 270
+        }
+      ]
+    }
+  }

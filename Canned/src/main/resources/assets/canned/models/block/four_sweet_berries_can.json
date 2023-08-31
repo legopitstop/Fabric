@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_four_can",
+	"textures": {
+		"texture": "canned:block/sweet_berries_can"
+	}
+}

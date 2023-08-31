@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shapeless","group":"canned:cans", "ingredients": [{"item": "canned:can"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}, {"item": "minecraft:melon"}], "result": {"item": "canned:melon_can"}}

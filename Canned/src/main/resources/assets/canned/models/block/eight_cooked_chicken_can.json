@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_eight_can",
+	"textures": {
+		"texture": "canned:block/cooked_chicken_can"
+	}
+}

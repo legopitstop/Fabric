@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_six_can",
+	"textures": {
+		"texture": "canned:block/cooked_rabbit_can"
+	}
+}

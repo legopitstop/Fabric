@@ -1,0 +1,140 @@
+{
+    "variants": {
+      "cans=1": [
+        {
+          "model": "canned:block/one_cookie_can"
+        },
+        {
+          "model": "canned:block/one_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/one_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/one_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=2": [
+        {
+          "model": "canned:block/two_cookie_can"
+        },
+        {
+          "model": "canned:block/two_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/two_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/two_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=3": [
+        {
+          "model": "canned:block/three_cookie_can"
+        },
+        {
+          "model": "canned:block/three_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/three_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/three_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=4": [
+        {
+          "model": "canned:block/four_cookie_can"
+        },
+        {
+          "model": "canned:block/four_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/four_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/four_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=5": [
+        {
+          "model": "canned:block/five_cookie_can"
+        },
+        {
+          "model": "canned:block/five_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/five_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/five_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=6": [
+        {
+          "model": "canned:block/six_cookie_can"
+        },
+        {
+          "model": "canned:block/six_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/six_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/six_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=7": [
+        {
+          "model": "canned:block/seven_cookie_can"
+        },
+        {
+          "model": "canned:block/seven_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/seven_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/seven_cookie_can",
+          "y": 270
+        }
+      ],
+      "cans=8": [
+        {
+          "model": "canned:block/eight_cookie_can"
+        },
+        {
+          "model": "canned:block/eight_cookie_can",
+          "y": 90
+        },
+        {
+          "model": "canned:block/eight_cookie_can",
+          "y": 180
+        },
+        {
+          "model": "canned:block/eight_cookie_can",
+          "y": 270
+        }
+      ]
+    }
+  }

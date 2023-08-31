@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_five_can",
+	"textures": {
+		"texture": "canned:block/cookie_can"
+	}
+}

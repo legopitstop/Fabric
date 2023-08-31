@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_two_can",
+	"textures": {
+		"texture": "canned:block/baked_potato_can"
+	}
+}

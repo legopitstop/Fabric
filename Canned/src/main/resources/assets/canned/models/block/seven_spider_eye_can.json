@@ -1,0 +1,6 @@
+{
+	"parent": "canned:block/template_seven_can",
+	"textures": {
+		"texture": "canned:block/spider_eye_can"
+	}
+}

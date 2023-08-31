@@ -1,0 +1,48 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "canned:beetroot_can"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_canned_can": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "canned:can"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_beetroot": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:beetroot"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_canned_can",
+            "has_beetroot"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "canned:beetroot_can"
+        ]
+    },
+    "sends_telemetry_event": false
+}
