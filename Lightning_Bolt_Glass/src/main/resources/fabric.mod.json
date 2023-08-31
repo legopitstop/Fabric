@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "lightning_glass",
+	"version": "${version}",
+	"name": "Lightning Bolt Glass",
+	"description": "When lightning hits sand it will turn it to glass.",
+	"authors": [
+		"legopitstop"
+	],
+	"contact": {
+		"homepage": "https://legopitstop.weebly.com",
+		"sources": "https://github.com/legopitstop/Fabric",
+		"issues": "https://github.com/legopitstop/Fabric/issues"
+	},
+	"license": "CC-BY-NC-ND-4.0",
+	"icon": "assets/lightning_glass/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.legopitstop.lightningglass.LightningGlass"
+		]
+	},
+	"mixins": [
+		"lightningglass.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
