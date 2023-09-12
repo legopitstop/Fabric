@@ -2,6 +2,7 @@ package com.legopitstop.canned.item;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.legopitstop.canned.registry.CannedItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
@@ -31,6 +32,7 @@ public class CanOpenerItem extends ToolItem implements Vanishable {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        user.getItemCooldownManager().set(this, 10);
         ItemStack mainHand = user.getStackInHand(Hand.MAIN_HAND);
         ItemStack offHand = user.getStackInHand(Hand.OFF_HAND);
         if (world.isClient) {return TypedActionResult.pass(user.getStackInHand(hand));}
@@ -38,6 +40,7 @@ public class CanOpenerItem extends ToolItem implements Vanishable {
         if (isCan && mainHand.isOf(this)) {
             ItemStack stack = new ItemStack(((CanFoodItem) offHand.getItem()).getResultItem(), 8);
             user.giveItemStack(stack);
+            user.giveItemStack(new ItemStack(CannedItems.CAN));
             mainHand.damage(1, user, (player) -> user.sendToolBreakStatus(user.getActiveHand()));
             offHand.decrement(1);
             return TypedActionResult.success(mainHand);
