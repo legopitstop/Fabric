@@ -13,7 +13,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
-public class CeilingLightBlock extends ModLightBlock implements Waterloggable {
+public class CeilingLightBlock extends BrightLightBlock implements Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     private static final VoxelShape BOUNDING_SHAPE = Block.createCuboidShape(6,13,6,10,16,10);
 

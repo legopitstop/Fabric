@@ -13,7 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
-public class ModBlocks {
+public class BrightBlocks {
     // CANDLE_STICK
     public static Block COPPER_CANDLE_STICK = createCandleStick(MapColor.PALE_YELLOW);
     public static Block COPPER_WHITE_CANDLE_STICK = createCandleStick(MapColor.WHITE_GRAY);

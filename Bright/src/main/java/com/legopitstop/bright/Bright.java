@@ -1,12 +1,9 @@
 package com.legopitstop.bright;
 
-import com.legopitstop.bright.registry.ModBlocks;
-import com.legopitstop.bright.registry.ModItemGroups;
-import com.legopitstop.bright.registry.ModItems;
+import com.legopitstop.bright.registry.BrightBlocks;
+import com.legopitstop.bright.registry.BrightItemGroups;
+import com.legopitstop.bright.registry.BrightItems;
 import net.fabricmc.api.ModInitializer;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 // TODO - Add recipes
 public class Bright implements ModInitializer {
@@ -15,8 +12,8 @@ public class Bright implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.register();
-		ModBlocks.register();
-		ModItemGroups.register();
+		BrightItems.register();
+		BrightBlocks.register();
+		BrightItemGroups.register();
 	}
 }

@@ -23,7 +23,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
-public class LightFixtureBlock extends ModLightBlock implements Waterloggable {
+public class LightFixtureBlock extends BrightLightBlock implements Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     public static final BooleanProperty LIT = RedstoneTorchBlock.LIT;
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;

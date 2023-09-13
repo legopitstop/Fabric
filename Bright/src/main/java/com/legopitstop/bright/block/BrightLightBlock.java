@@ -10,10 +10,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class ModLightBlock extends Block {
+public class BrightLightBlock extends Block {
     public static final BooleanProperty LIT = Properties.LIT;
 
-    public ModLightBlock(Settings settings) {
+    public BrightLightBlock(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)this.getDefaultState().with(LIT, false));
     }
