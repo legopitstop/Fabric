@@ -6,12 +6,12 @@
 - [More Honey](./More_Honey/README.md)
 - [Lightning Bolt Glass](./Lightning_Bolt_Glass/README.md)
 - [Canned](./Canned/README.md)
+- [More Pumpkin](./More_Pumpkin/README.md)
 
 - Planned:
     - [Basalt Blocks](./Basalt_Blocks/README.md)
     - [Construction Blocks](./Construction_Blocks/README.md)
     - [More Blocks](./More_Blocks/README.md)
-    - [More Pumpkins](./More_Pumpkins/README.md)
     - [Simple Magnets](./Simple_Magnets/README.md)
     - [Spawner Craft](./Spawner_Craft/README.md)
     - [Ultimate Block Breaker](./Ultimate_Block_Breaker/README.md)
