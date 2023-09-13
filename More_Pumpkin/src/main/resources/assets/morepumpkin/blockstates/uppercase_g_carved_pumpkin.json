@@ -1,0 +1,19 @@
+{
+	"variants": {
+	  "facing=east": {
+		"model": "morepumpkin:block/uppercase_g_carved_pumpkin",
+		"y": 90
+	  },
+	  "facing=north": {
+		"model": "morepumpkin:block/uppercase_g_carved_pumpkin"
+	  },
+	  "facing=south": {
+		"model": "morepumpkin:block/uppercase_g_carved_pumpkin",
+		"y": 180
+	  },
+	  "facing=west": {
+		"model": "morepumpkin:block/uppercase_g_carved_pumpkin",
+		"y": 270
+	  }
+	}
+  }
