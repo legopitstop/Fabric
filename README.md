@@ -4,6 +4,7 @@
 - [Bright](./Bright/README.md)
 - [More Gold](./More_Gold/README.md)
 - [More Honey](./More_Honey/README.md)
+- [More Block](./More_Block/README.md)
 - [Lightning Bolt Glass](./Lightning_Bolt_Glass/README.md)
 - [Canned](./Canned/README.md)
 - [More Pumpkin](./More_Pumpkin/README.md)
