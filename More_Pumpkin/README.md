@@ -16,7 +16,7 @@ This mod adds 200+ new carved pumpkins to your world that also includes their ja
 | server_side | `required`   |
 
 ## LINKS
-- [Download](DOWNLOAD)
+- [Download](https://curseforge.com/minecraft/mc-mods/more-pumpkin-fabric)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/More_Pumpkins)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
