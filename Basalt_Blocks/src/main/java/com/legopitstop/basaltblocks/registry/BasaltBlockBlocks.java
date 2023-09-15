@@ -40,7 +40,7 @@ public class BasaltBlockBlocks {
     public static final Block BASALT_COBBLESTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.BASALT));
     public static final Block BASALT_COBBLESTONE_BUTTON = new ButtonBlock(FabricBlockSettings.copyOf(Blocks.BASALT), BlockSetType.STONE, 30, false);
     public static final Block BASALT_COBBLESTONE_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.BASALT), BlockSetType.STONE);
-
+    
     public static void register() {
         Registry.register(Registries.BLOCK, new Identifier(BasaltBlocks.MOD_ID, "basalt_slab"), BASALT_SLAB);
         Registry.register(Registries.BLOCK, new Identifier(BasaltBlocks.MOD_ID, "basalt_stairs"), BASALT_STAIRS);
