@@ -16,7 +16,7 @@ Two basalt blocks, not enough? Not worth the time to gather? This mod adds basal
 | server_side | `required`    |
 
 ## LINKS
-- [Download](DOWNLOAD)
+- [Download](https://curseforge.com/minecraft/mc-mods/basalt-blocks-fabric)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Basalt_Blocks)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
