@@ -7,9 +7,9 @@
 - [Lightning Bolt Glass](./Lightning_Bolt_Glass/README.md)
 - [Canned](./Canned/README.md)
 - [More Pumpkin](./More_Pumpkin/README.md)
+- [Basalt Blocks](./Basalt_Blocks/README.md)
 
 - Planned:
-    - [Basalt Blocks](./Basalt_Blocks/README.md)
     - [Construction Blocks](./Construction_Blocks/README.md)
     - [More Blocks](./More_Blocks/README.md)
     - [Simple Magnets](./Simple_Magnets/README.md)
