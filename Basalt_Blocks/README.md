@@ -6,14 +6,14 @@ Two basalt blocks, not enough? Not worth the time to gather? This mod adds basal
 
 ## Mod Data
 
-| Key         | Value         |
-|-------------|---------------|
-| supported   | `yes`         |
-| version     | `1.0.0`       |
-| mc_version  | `1.20.1`      |
-| mod_id      | `basaltblocks`|
-| client_side | `required`    |
-| server_side | `required`    |
+| Key         | Value          |
+|-------------|----------------|
+| supported   | `yes`          |
+| version     | `1.0.0`        |
+| mc_version  | `1.20.x`       |
+| mod_id      | `basaltblocks` |
+| client_side | `required`     |
+| server_side | `required`     |
 
 ## LINKS
 - [Download](https://curseforge.com/minecraft/mc-mods/basalt-blocks-fabric)

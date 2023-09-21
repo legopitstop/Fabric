@@ -6,14 +6,14 @@ This mod adds new varients of blocks! One block variant that you can find in the
 
 ## Mod Data
 
-| Key         | Value      |
-|-------------|------------|
-| supported   | `yes`      |
-| version     | `1.0.0`    |
-| mc_version  | `1.20.1`   |
-| mod_id      | `moreblock`|
-| client_side | `required` |
-| server_side | `required` |
+| Key         | Value       |
+|-------------|-------------|
+| supported   | `yes`       |
+| version     | `1.0.0`     |
+| mc_version  | `1.20.x`    |
+| mod_id      | `moreblock` |
+| client_side | `required`  |
+| server_side | `required`  |
 
 ## LINKS
 - [Download](https://curseforge.com/minecraft/mc-mods/more-block-fabric)

@@ -6,17 +6,17 @@ This mod adds canned foods! You can place these blocks on the ground. You can ad
 
 ## Mod Data
 
-| Key         | Value     |
-|-------------|-----------|
-| supported   | `yes`     |
-| version     | `1.0.0`   |
-| mc_version  | `1.20.1`  |
-| mod_id      | `canned`  |
-| client_side | `required`|
-| server_side | `required`|
+| Key         | Value      |
+|-------------|------------|
+| supported   | `yes`      |
+| version     | `1.0.0`    |
+| mc_version  | `1.20.x`   |
+| mod_id      | `canned`   |
+| client_side | `required` |
+| server_side | `required` |
 
 ## LINKS
-- [Download](DOWNLOAD)
+- [Download](https://curseforge.com/minecraft/mc-mods/canned)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Canned)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

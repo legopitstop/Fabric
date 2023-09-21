@@ -3,7 +3,7 @@
 	"id": "basaltblocks",
 	"version": "${version}",
 	"name": "Basalt Blocks",
-	"description": "desc",
+	"description": "3 basalt blocks not enough to decorate? What if there were more basalt blocks, slabs?",
 	"authors": [
 		"legopitstop"
 	],
@@ -23,7 +23,7 @@
 	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": "~1.20",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
