@@ -1,6 +1,11 @@
 {
-  "source": {
-    "tag": "c:red_sand"
+  "type": "lightning_glass:replace_single_block",
+  "condition": {
+    "block": {
+      "tag": "c:red_sand"
+    }
   },
-  "result": "minecraft:orange_stained_glass"
+  "block": {
+    "Name": "minecraft:orange_stained_glass"
+  }
 }

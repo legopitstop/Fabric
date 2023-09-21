@@ -1,0 +1,12 @@
+{
+  "power": 2,
+  "display_name": "None",
+  "Pose": {
+    "Body": [0, 0, 0],
+    "Head": [0, 0, 0],
+    "LetArm": [0, 0, 0],
+    "LetLeg": [0, 0, 0],
+    "RightArm": [0, 0, 0],
+    "RightLeg": [0, 0, 0]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "power": 12,
+  "display_name": "Can Can B",
+  "Pose": {
+    "Body": [0, -18, 0],
+    "Head": [-10, -20, 0],
+    "LetArm": [0, 0, -112],
+    "LetLeg": [0, 0, 13],
+    "RightArm": [8, 90, 111],
+    "RightLeg": [-119, -42, 0]
+  }
+}

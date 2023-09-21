@@ -1,0 +1,12 @@
+{
+  "power": 4,
+  "display_name": "Athena",
+  "Pose": {
+    "Body": [0, 0, 2],
+    "Head": [-5, 0, 0],
+    "LetArm": [10, 0, -5],
+    "LetLeg": [-3, -3, -3],
+    "RightArm": [-60, 20, -10],
+    "RightLeg": [3, 3, 3]
+  }
+}

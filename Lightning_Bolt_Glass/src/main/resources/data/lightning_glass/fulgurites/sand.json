@@ -1,6 +1,11 @@
 {
-  "source": {
-    "tag": "c:sand"
+  "type": "lightning_glass:replace_single_block",
+  "condition": {
+    "block": {
+      "tag": "c:sand"
+    }
   },
-  "result": "minecraft:glass"
+  "block": {
+    "Name": "minecraft:glass"
+  }
 }

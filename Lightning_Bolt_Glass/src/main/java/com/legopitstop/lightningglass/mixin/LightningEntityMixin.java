@@ -31,10 +31,8 @@ public class LightningEntityMixin {
         if (entity.getWorld() instanceof ServerWorld) {
             BlockPos pos = entity.getBlockPos().down();
             CachedBlockPosition cachedBlock = new CachedBlockPosition(entity.getWorld(), pos, false);
-            BlockState blockState = FulguriteRegistry.getBlock(cachedBlock);
-            if (!blockState.isAir()) {
-                entity.getWorld().setBlockState(pos, blockState);
-            }
+            System.out.println(cachedBlock.getBlockState());
+            FulguriteRegistry.generateFulgurite((ServerWorld)entity.getWorld(), cachedBlock);
         }
     }
 }

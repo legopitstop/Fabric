@@ -1,37 +1,40 @@
 package com.legopitstop.lightningglass.registry;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
+import com.legopitstop.lightningglass.server.fulgurite.Fulgurite;
 import net.minecraft.block.pattern.CachedBlockPosition;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
 
 import java.util.concurrent.ConcurrentHashMap;
 
 public class FulguriteRegistry {
-    public static final ConcurrentHashMap<Identifier, Fulgurite> INSTANCE = new ConcurrentHashMap<>();
-
-    public static void add(Identifier id, Fulgurite fulgurite) {
-        FulguriteRegistry.INSTANCE.put(id, fulgurite);
+    public static final ConcurrentHashMap<Identifier, Fulgurite> FULGRUITE = new ConcurrentHashMap<>();
+    public static void registerFulgurite(String id, Fulgurite fulgurite) {
+        FulguriteRegistry.FULGRUITE.put(new Identifier(id), fulgurite);
+    }
+    public static void registerFulgurite(Identifier id, Fulgurite fulgurite) {
+        FulguriteRegistry.FULGRUITE.put(id, fulgurite);
     }
 
-    public static void clear() {
-        FulguriteRegistry.INSTANCE.clear();
+    public static void clearFulgurites() {
+        FulguriteRegistry.FULGRUITE.clear();
     }
 
-    public static void remove(Identifier id) {
-        FulguriteRegistry.INSTANCE.remove(id);
+    public static void removeFulgurite(Identifier id) {
+        FulguriteRegistry.FULGRUITE.remove(id);
     }
 
-    public static int size() {
-        return FulguriteRegistry.INSTANCE.size();
+    public static int sizeFulgurite() {
+        return FulguriteRegistry.FULGRUITE.size();
     }
 
-    public static BlockState getBlock(CachedBlockPosition cachedBlock) {
-        for (Fulgurite fulgurite : FulguriteRegistry.INSTANCE.values()) {
-            if (fulgurite.getSource().test(cachedBlock)) {
-                return fulgurite.getResult();
+    public static void generateFulgurite(ServerWorld world, CachedBlockPosition cachedBlock) {
+        for (Fulgurite fulgurite : FulguriteRegistry.FULGRUITE.values()) {
+            if (fulgurite.test(cachedBlock)) {
+                fulgurite.generate(world, cachedBlock.getBlockPos());
+                break;
             }
         }
-        return Blocks.AIR.getDefaultState();
     }
 }

@@ -22,13 +22,13 @@ import org.jetbrains.annotations.Nullable;
 import java.util.*;
 import java.util.function.Predicate;
 
-public class Fulgurite {
+public class LegacyFulgurite {
     public Identifier id;
     public BlockPredicate source;
     public BlockState result;
     public String function;
 
-    public Fulgurite(Identifier id, BlockPredicate source, BlockState result, @Nullable String function) {
+    public LegacyFulgurite(Identifier id, BlockPredicate source, BlockState result, @Nullable String function) {
         this.id = id.withPath(id.getPath().replace("fulgurites/", ""));
         this.source = source;
         this.result = result;
@@ -59,14 +59,14 @@ public class Fulgurite {
         return block.getDefaultState();
     }
 
-    public static Fulgurite fromJson(Identifier id, JsonObject json) {
+    public static LegacyFulgurite fromJson(Identifier id, JsonObject json) {
         if (json != null && !json.isJsonNull()) {
             // source
             BlockPredicate source = new StatePredicate(Blocks.AIR.getDefaultState(), null, null);
             if (json.has("source")) {
 
                 if (JsonHelper.hasString(json, "source")) {// source: ""
-                    source = new StatePredicate(Fulgurite.asBlockState(json, "source"), null, null);
+                    source = new StatePredicate(LegacyFulgurite.asBlockState(json, "source"), null, null);
                 } else if (JsonHelper.hasJsonObject(json, "source")) {
                     JsonObject sourceObj = JsonHelper.getObject(json, "source", new JsonObject());
 
@@ -75,7 +75,7 @@ public class Fulgurite {
                             // TODO - Implement "properties"
                             // Map<Property<?>, Comparable<?>> properties = Maps.newHashMap();
                             Set<Property<?>> properties = null;
-                            BlockState state = Fulgurite.asBlockState(sourceObj, "block");
+                            BlockState state = LegacyFulgurite.asBlockState(sourceObj, "block");
                             NbtCompound nbt = NbtHelper.fromNbtProviderString(JsonHelper.getString(sourceObj, "nbt", "{}"));
                             source = new StatePredicate(state, properties, nbt);
                         } catch (CommandSyntaxException e) {
@@ -103,7 +103,7 @@ public class Fulgurite {
             BlockState result = Blocks.GLASS.getDefaultState();
             if (json.has("result")) {
                 if (JsonHelper.hasString(json, "result")) {
-                    result = Fulgurite.asBlockState(json, "result");
+                    result = LegacyFulgurite.asBlockState(json, "result");
                 }
             }
 
@@ -113,7 +113,7 @@ public class Fulgurite {
                 // TODO - Validate that function exists
             }
 
-            return new Fulgurite(id, source, result, function);
+            return new LegacyFulgurite(id, source, result, function);
         }
         return null;
     }
