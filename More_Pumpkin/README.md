@@ -6,14 +6,14 @@ This mod adds 200+ new carved pumpkins to your world that also includes their ja
 
 ## Mod Data
 
-| Key         | Value        |
-|-------------|--------------|
-| supported   | `yes`        |
-| version     | `1.0.0`      |
-| mc_version  | `1.20.1`     |
-| mod_id      | `morepumpkin`|
-| client_side | `required`   |
-| server_side | `required`   |
+| Key         | Value         |
+|-------------|---------------|
+| supported   | `yes`         |
+| version     | `1.0.0`       |
+| mc_version  | `1.20.x`      |
+| mod_id      | `morepumpkin` |
+| client_side | `required`    |
+| server_side | `required`    |
 
 ## LINKS
 - [Download](https://curseforge.com/minecraft/mc-mods/more-pumpkin-fabric)
