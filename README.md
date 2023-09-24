@@ -9,6 +9,7 @@
 - [Canned](./Canned/README.md)
 - [More Pumpkin](./More_Pumpkin/README.md)
 - [Basalt Blocks](./Basalt_Blocks/README.md)
+- [Armor Stand Poses](./Armorstand_Poses/README.md)
 
 - Planned:
     - [Construction Blocks](./Construction_Blocks/README.md)
