@@ -1,11 +1,10 @@
 {
   "power": 1,
-  "display_name": "Deault",
   "Pose": {
     "Body": [0, 0, 0],
     "Head": [0, 0, 0],
-    "LetArm": [-10, 0, -10],
-    "LetLeg": [-1, 0, -1],
+    "LeftArm": [-10, 0, -10],
+    "LeftLeg": [-1, 0, -1],
     "RightArm": [-15, 0, 10],
     "RightLeg": [1, 0, 1]
   }

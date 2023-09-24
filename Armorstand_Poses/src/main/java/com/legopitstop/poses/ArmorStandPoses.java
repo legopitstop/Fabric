@@ -1,6 +1,6 @@
 package com.legopitstop.poses;
 
-import com.legopitstop.poses.server.PosesLoader;
+import com.legopitstop.poses.server.pose.PosesLoader;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.resource.ResourceType;

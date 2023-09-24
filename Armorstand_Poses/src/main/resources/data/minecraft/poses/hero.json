@@ -1,11 +1,10 @@
 {
   "power": 13,
-  "display_name": "Hero",
   "Pose": {
     "Body": [0, 8, 0],
     "Head": [-4, 67, 0],
-    "LetArm": [16, 32, -8],
-    "LetLeg": [0, -75, -8],
+    "LeftArm": [16, 32, -8],
+    "LeftLeg": [0, -75, -8],
     "RightArm": [-99, 63, 0],
     "RightLeg": [4, 63, 8]
   }

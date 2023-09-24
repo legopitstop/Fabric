@@ -1,11 +1,10 @@
 {
   "power": 11,
-  "display_name": "Can Can A",
   "Pose": {
     "Body": [0, 22, 0],
     "Head": [-5, 18, 0],
-    "LetArm": [8, 0, -114],
-    "LetLeg": [-111, 55, 0],
+    "LeftArm": [8, 0, -114],
+    "LeftLeg": [-111, 55, 0],
     "RightArm": [0, 84, 111],
     "RightLeg": [0, 23, -13]
   }

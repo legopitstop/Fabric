@@ -1,11 +1,10 @@
 {
   "power": 10,
-  "display_name": "Zombie",
   "Pose": {
     "Body": [0, 0, 0],
     "Head": [-10, 0, -5],
-    "LetArm": [-105, 0, 0],
-    "LetLeg": [7, 0, 0],
+    "LeftArm": [-105, 0, 0],
+    "LeftLeg": [7, 0, 0],
     "RightArm": [-100, 0, 0],
     "RightLeg": [-46, 0, 0]
   }

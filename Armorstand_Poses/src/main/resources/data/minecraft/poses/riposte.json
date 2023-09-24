@@ -1,11 +1,10 @@
 {
   "power": 9,
-  "display_name": "Riposte",
   "Pose": {
     "Body": [0, 0, 0],
     "Head": [16, 20, 0],
-    "LetArm": [4, 8, 237],
-    "LetLeg": [-14, -18, -16],
+    "LeftArm": [4, 8, 237],
+    "LeftLeg": [-14, -18, -16],
     "RightArm": [246, 0, 89],
     "RightLeg": [8, 20, 4]
   }

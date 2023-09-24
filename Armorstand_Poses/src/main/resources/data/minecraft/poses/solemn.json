@@ -1,11 +1,10 @@
 {
   "power": 3,
-  "display_name": "Solumn",
   "Pose": {
     "Body": [0, 0, 2],
     "Head": [15, 0, 0],
-    "LetArm": [-30, 15, 15],
-    "LetLeg": [-1, 0, -1],
+    "LeftArm": [-30, 15, 15],
+    "LeftLeg": [-1, 0, -1],
     "RightArm": [-60, -20, -10],
     "RightLeg": [1, 0, 1]
   }

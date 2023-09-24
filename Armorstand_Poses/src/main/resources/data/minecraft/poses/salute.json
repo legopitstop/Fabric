@@ -1,11 +1,10 @@
 {
   "power": 8,
-  "display_name": "Salute",
   "Pose": {
     "Body": [0, 0, 0],
     "Head": [0, 0, 0],
-    "LetArm": [10, 0, -5],
-    "LetLeg": [-1, 0, -1],
+    "LeftArm": [10, 0, -5],
+    "LeftLeg": [-1, 0, -1],
     "RightArm": [-70, -40, 0],
     "RightLeg": [1, 0, 1]
   }

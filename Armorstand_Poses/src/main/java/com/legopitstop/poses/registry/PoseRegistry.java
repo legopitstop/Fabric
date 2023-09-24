@@ -1,5 +1,6 @@
 package com.legopitstop.poses.registry;
 
+import com.legopitstop.poses.server.pose.Pose;
 import net.minecraft.util.Identifier;
 
 import java.util.concurrent.ConcurrentHashMap;
@@ -21,5 +22,9 @@ public class PoseRegistry {
 
     public static int size() {
         return PoseRegistry.INSTANCE.size();
+    }
+
+    public static Pose get(Identifier id) {
+        return INSTANCE.get(id);
     }
 }

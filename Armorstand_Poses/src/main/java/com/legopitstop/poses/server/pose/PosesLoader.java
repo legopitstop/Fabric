@@ -1,11 +1,8 @@
-package com.legopitstop.poses.server;
+package com.legopitstop.poses.server.pose;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.legopitstop.poses.ArmorStandPoses;
-import com.legopitstop.poses.registry.Pose;
 import com.legopitstop.poses.registry.PoseRegistry;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resource.Resource;
@@ -27,18 +24,17 @@ public class PosesLoader implements SimpleSynchronousResourceReloadListener {
         PoseRegistry.clear();
         ArmorStandPoses.LOGGER.info("Loading poses...");
         Map<Identifier, Resource> resources = manager.findResources("poses", (identifer) -> identifer.getPath().endsWith(".json"));
-        for (Identifier id : resources.keySet()) {
+        for (Identifier resourceId : resources.keySet()) {
+            Identifier id = resourceId.withPath(resourceId.getPath().replace("poses/", "").replace(".json", ""));
             try {
-                JsonObject jsonObj = (JsonObject) JsonParser.parseReader(new InputStreamReader(resources.get(id).getInputStream()));
+                JsonObject jsonObj = (JsonObject) JsonParser.parseReader(new InputStreamReader(resources.get(resourceId).getInputStream()));
                 Pose pose = Pose.fromJson(id, jsonObj);
-                PoseRegistry.add(id, pose);
+                if (pose != null) {
+                    PoseRegistry.add(id, pose);
+                }
             } catch (Exception e) {
-                Identifier id2 = id.withPath(id.getPath().replace("poses/", "").replace(".json", ""));
-                ArmorStandPoses.LOGGER.error("Failed to load "+id2+": "+e);
+                ArmorStandPoses.LOGGER.error("Failed to load "+id+": "+e);
             }
         }
-        System.out.println(PoseRegistry.size());
-
-
     }
 }
