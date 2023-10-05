@@ -1,10 +1,13 @@
 package com.legopitstop.lightningglass.server.fulgurite;
 
-import net.minecraft.util.JsonSerializableType;
-import net.minecraft.util.JsonSerializer;
+import com.mojang.serialization.Codec;
 
-public class FulguriteType extends JsonSerializableType<Fulgurite> {
-    public FulguriteType(JsonSerializer<? extends Fulgurite> jsonSerializer) {
-        super(jsonSerializer);
+public record FulguriteType(Codec<? extends Fulgurite> codec)  {
+    public FulguriteType(Codec<? extends Fulgurite> codec) {
+        this.codec = codec;
+    }
+
+    public Codec<? extends Fulgurite> codec() {
+        return this.codec;
     }
 }

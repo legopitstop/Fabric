@@ -1,26 +1,22 @@
 package com.legopitstop.lightningglass.server.fulgurite;
 
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonSerializationContext;
-import com.google.gson.JsonSyntaxException;
-import com.legopitstop.lightningglass.util.FulguriteReader;
-import net.minecraft.block.Block;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.pattern.CachedBlockPosition;
-import net.minecraft.predicate.BlockPredicate;
-import net.minecraft.registry.Registries;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.JsonHelper;
-import net.minecraft.util.JsonSerializer;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 
-public class BlockColumnsFulgurite implements Fulgurite {
-    public BlockPredicate condition;
-    public BlockState block;
+public record BlockColumnsFulgurite(PredicatedStateProvider condition, BlockState block) implements Fulgurite {
+    public static final Codec<BlockColumnsFulgurite> CODEC = RecordCodecBuilder.create((instance) -> {
+        return instance.group(
+                PredicatedStateProvider.CODEC.fieldOf("condition").forGetter(BlockColumnsFulgurite::condition),
+                BlockState.CODEC.fieldOf("block").forGetter(BlockColumnsFulgurite::block)
+        ).apply(instance, BlockColumnsFulgurite::new);
+    });
 
-    public BlockColumnsFulgurite(BlockPredicate condition, BlockState block) {
+    public BlockColumnsFulgurite(PredicatedStateProvider condition, BlockState block) {
         this.condition = condition;
         this.block = block;
     }
@@ -31,31 +27,13 @@ public class BlockColumnsFulgurite implements Fulgurite {
     }
 
     @Override
-    public BlockState getBlock() {
-        return this.block;
-    }
-
-    @Override
-    public BlockPredicate getCondition() {
-        return this.condition;
+    public boolean test(CachedBlockPosition block) {
+        return false;
     }
 
     // TODO - generate fulgurite
     @Override
     public void generate(ServerWorld world, BlockPos blockPos) {
         System.out.println("BlockColumnsFulgurite.generate");
-    }
-
-    public static class Serializer implements JsonSerializer<BlockColumnsFulgurite> {
-
-        @Override
-        public void toJson(JsonObject json, BlockColumnsFulgurite object, JsonSerializationContext context) {
-
-        }
-
-        @Override
-        public BlockColumnsFulgurite fromJson(JsonObject json, JsonDeserializationContext context) {
-            return new BlockColumnsFulgurite(FulguriteReader.getCondition(json), FulguriteReader.getBlock(json));
-        }
     }
 }
