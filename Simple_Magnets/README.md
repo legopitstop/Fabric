@@ -6,17 +6,18 @@ This mod adds simple magnet items and blocks to make gathering dropped items eas
 
 ## Mod Data
 
-| Key         | Value     |
-|-------------|-----------|
-| supported   | `yes`     |
-| version     | `1.0.0`   |
-| mc_version  | `1.20.1`  |
-| mod_id      | `magnet`  |
-| client_side | `required`|
-| server_side | `required`|
+| Key         | Value      |
+|-------------|------------|
+| supported   | `yes`      |
+| version     | `1.0.0`    |
+| mc_version  | `1.20.x`   |
+| mod_id      | `magnet`   |
+| client_side | `required` |
+| server_side | `required` |
 
 ## LINKS
-- [Download](DOWNLOAD)
+- [Modrinth](https://modrinth.com/mod/magnets)
+- [Curseforge](https://curseforge.com/minecraft/mc-mods/simple-magnets-fabric)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Simple_Magnets)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

@@ -16,7 +16,6 @@ Are you a builder? this mod has TONS of blocks. and adds some items that are van
 | server_side | `required`|
 
 ## LINKS
-- [Download](DOWNLOAD)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Construction_Blocks)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "magnet",
+	"version": "${version}",
+	"name": "Simple Magnets",
+	"description": "This mod adds simple magnet items and blocks to make gathering dropped items easier. Upgrade your magnet to make it reach further out. Use the magnet blocks to gather items from a mob farm.",
+	"authors": [
+		"legopitstop"
+	],
+	"contact": {
+		"homepage": "https://legopitstop.weebly.com",
+		"sources": "https://github.com/legopitstop/Fabric",
+		"issues": "https://github.com/legopitstop/Fabric/issues"
+	},
+	"license": "CC-BY-NC-ND-4.0",
+	"icon": "assets/magnet/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.legopitstop.magnet.SimpleMagnets"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

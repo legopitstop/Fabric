@@ -15,7 +15,8 @@ Whenever lightning hits sand it turns into a glass
 | server_side | `required`|
 
 ## LINKS
-- [Download](https://legacy.curseforge.com/minecraft/mc-mods/lightning-bolt-glass)
+- [Modrinth](https://modrinth.com/mod/lightning-bolt-glass)
+- [Curseforge](https://curseforge.com/minecraft/mc-mods/lightning-bolt-glass)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Lightning_Bolt_Glass)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

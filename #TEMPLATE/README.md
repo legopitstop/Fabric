@@ -15,7 +15,6 @@ DESC
 | server_side | `required`|
 
 ## LINKS
-- [Download](DOWNLOAD)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/TEMPLATE)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

@@ -16,7 +16,6 @@ This mod adds in recipes for spawn eggs. You can use the spawn egg to change any
 | server_side | `required`     |
 
 ## LINKS
-- [Download](DOWNLOAD)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Spawner_Craft)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

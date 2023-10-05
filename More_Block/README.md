@@ -16,7 +16,8 @@ This mod adds new varients of blocks! One block variant that you can find in the
 | server_side | `required`  |
 
 ## LINKS
-- [Download](https://curseforge.com/minecraft/mc-mods/more-block-fabric)
+- [Modrinth](https://modrinth.com/mod/more-block)
+- [Curseforge](https://curseforge.com/minecraft/mc-mods/more-block-fabric)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/More_Blocks)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

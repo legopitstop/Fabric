@@ -16,7 +16,6 @@ This mod adds different tiered block breakers to break any blocks (besides bedro
 | server_side | `required`|
 
 ## LINKS
-- [Download](DOWNLOAD)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Ultimate_Block_Breaker)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

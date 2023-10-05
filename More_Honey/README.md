@@ -16,7 +16,8 @@ Ever thought that Minecraft needed more honey food? Then this is your mod! This 
 | server_side | `required`  |
 
 ## LINKS
-- [Download](DOWNLOAD)
+- [Modrinth](https://modrinth.com/mod/more-honey)
+- [Curseforge](https://curseforge.com/minecraft/mc-mods/more-honey)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/More_Honey)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

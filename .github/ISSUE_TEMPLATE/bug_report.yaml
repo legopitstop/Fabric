@@ -11,28 +11,14 @@ body:
      value: |
       Note: Please search to see if an issue already exists for the bug you encountered.
 
- - type: dropdown
+ - type: input
    id: mod
    validations:
      required: true
    attributes:
      label: What mod are you using?
-     description: The mod where the issue is taking place
-     multiple: false
-     options:
-       - Basalt Blocks
-       - Bright
-       - Canned
-       - Construction Blocks
-       - More Blocks
-       - More Gold
-       - More Honey
-       - More Pumpkins
-       - More Stairs and Slabs
-       - Simple Magnets
-       - Spawner Craft
-       - Ultimate Block Breaker
-       - Other
+     description: The mod where the issue is taking place.
+     placeholder: e.g. Armorstand Poses, Canned, Basalt Blocks
 
  - type: textarea
    id: describe
