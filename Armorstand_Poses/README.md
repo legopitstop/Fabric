@@ -15,7 +15,8 @@ Bedrock armor stand poses for Java Edition.
 | server_side | `required` |
 
 ## LINKS
-- [Download](https://curseforge.com/minecraft/mod/armor-stand-poses-fabric)
+- [Modrinth](https://modrinth.com/mod/armor-stand-poses)
+- [Curseforge](https://curseforge.com/minecraft/mod/armor-stand-poses)
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/TEMPLATE)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)

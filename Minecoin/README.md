@@ -16,7 +16,6 @@ Get FAKE minecoins to buy and trade!
 | server_side | `required`   |
 
 ## LINKS
-- [Download](DOWNLOAD)
-- [Wiki Page](https://github.com/legopitstop/Fabric/wiki/TEMPLATE)
+- [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Minecoin)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
