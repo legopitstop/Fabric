@@ -9,8 +9,8 @@ Whenever lightning hits sand it turns into a glass
 | Key         | Value     |
 |-------------|-----------|
 | supported   | `yes`     |
-| version     | `1.0.0 `  |
-| mc_version  | `1.20.1`  |
+| version     | `1.1.0 `  |
+| mc_version  | `1.20.x`  |
 | client_side | `optional`|
 | server_side | `required`|
 

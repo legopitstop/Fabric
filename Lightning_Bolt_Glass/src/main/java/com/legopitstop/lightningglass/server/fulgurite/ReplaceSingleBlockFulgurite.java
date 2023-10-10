@@ -4,20 +4,20 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.pattern.CachedBlockPosition;
+import net.minecraft.predicate.BlockPredicate;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 
-public record ReplaceSingleBlockFulgurite(PredicatedStateProvider condition, BlockState block) implements Fulgurite {
+public record ReplaceSingleBlockFulgurite(BlockPredicate predicate, BlockState block) implements Fulgurite {
     public static final Codec<ReplaceSingleBlockFulgurite> CODEC = RecordCodecBuilder.create((instance) -> {
         return instance.group(
-                PredicatedStateProvider.CODEC.fieldOf("condition").forGetter(ReplaceSingleBlockFulgurite::condition),
+                BlockPredicate.CODEC.fieldOf("predicate").forGetter(ReplaceSingleBlockFulgurite::predicate),
                 BlockState.CODEC.fieldOf("block").forGetter(ReplaceSingleBlockFulgurite::block)
         ).apply(instance, ReplaceSingleBlockFulgurite::new);
     });
 
-    public ReplaceSingleBlockFulgurite(PredicatedStateProvider condition, BlockState block) {
-        this.condition = condition;
+    public ReplaceSingleBlockFulgurite(BlockPredicate predicate, BlockState block) {
+        this.predicate = predicate;
         this.block = block;
     }
 
@@ -28,7 +28,7 @@ public record ReplaceSingleBlockFulgurite(PredicatedStateProvider condition, Blo
 
     @Override
     public boolean test(CachedBlockPosition block) {
-        return false;
+        return this.predicate.test((ServerWorld)block.getWorld(), block.getBlockPos());
     }
 
     @Override

@@ -11,7 +11,6 @@ public class FulguriteTypes {
 
     public static final FulguriteType ROOT_SYSTEM;
     public static final FulguriteType REPLACE_SINGLE_BLOCK;
-    public static final FulguriteType BLOCK_COLUMNS;
 
     private static FulguriteType register(String id, Codec<? extends Fulgurite> codec) {
         return register(new Identifier(id), codec);
@@ -32,7 +31,6 @@ public class FulguriteTypes {
     static {
         ROOT_SYSTEM = FulguriteTypes.register("root_system", RootSystemFulgurite.CODEC);
         REPLACE_SINGLE_BLOCK = FulguriteTypes.register("replace_single_block", ReplaceSingleBlockFulgurite.CODEC);
-        BLOCK_COLUMNS = FulguriteTypes.register("block_columns", BlockColumnsFulgurite.CODEC);
     }
 
 }

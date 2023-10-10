@@ -1,11 +1,8 @@
 {
-  "type": "lightning_glass:replace_single_block",
-  "condition": {
-    "block": {
-      "tag": "c:red_sand"
-    }
-  },
-  "block": {
-    "Name": "minecraft:orange_stained_glass"
-  }
+  "type": "minecraft:root_system",
+  "placement_attempts": 20,
+  "radius": 3,
+  "column_max_height": 50,
+  "predicate": { "tag": "c:red_sand" },
+  "block": { "Name": "minecraft:orange_stained_glass" }
 }

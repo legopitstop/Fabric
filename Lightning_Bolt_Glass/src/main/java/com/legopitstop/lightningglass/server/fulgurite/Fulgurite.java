@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 public interface Fulgurite {
     public FulguriteType getType();
 
-    public boolean test(CachedBlockPosition block);
+    boolean test(CachedBlockPosition block);
 
     public void generate(ServerWorld world, BlockPos blockPos);
 
