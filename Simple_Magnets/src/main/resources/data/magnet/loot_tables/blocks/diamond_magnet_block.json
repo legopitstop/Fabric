@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "magnet:diamond_magnet"
+          "name": "magnet:diamond_magnet_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "magnet:blocks/diamond_magnet"
+  "random_sequence": "magnet:blocks/diamond_magnet_block"
 }

@@ -48,7 +48,7 @@ public class MagnetBlock extends FacingBlock {
         boolean bl = state.get(POWERED);
         if (bl != world.isReceivingRedstonePower(pos)) {
             if (bl) {
-                world.scheduleBlockTick(pos, this, 4);
+                world.scheduleBlockTick(pos, this, this.delay);
             } else {
                 world.setBlockState(pos, (BlockState)state.cycle(POWERED), Block.NOTIFY_LISTENERS);
                 this.teleport(state, world, pos);

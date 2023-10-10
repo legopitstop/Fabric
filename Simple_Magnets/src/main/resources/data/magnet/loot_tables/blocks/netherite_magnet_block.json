@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "magnet:copper_magnet"
+          "name": "magnet:netherite_magnet_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "magnet:blocks/copper_magnet"
+  "random_sequence": "magnet:blocks/netherite_magnet_block"
 }

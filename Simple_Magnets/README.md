@@ -9,7 +9,7 @@ This mod adds simple magnet items and blocks to make gathering dropped items eas
 | Key         | Value      |
 |-------------|------------|
 | supported   | `yes`      |
-| version     | `1.0.0`    |
+| version     | `1.1.0`    |
 | mc_version  | `1.20.x`   |
 | mod_id      | `magnet`   |
 | client_side | `required` |

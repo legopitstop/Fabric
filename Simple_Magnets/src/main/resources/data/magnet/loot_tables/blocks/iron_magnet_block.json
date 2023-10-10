@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "magnet:gold_magnet"
+          "name": "magnet:iron_magnet_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "magnet:blocks/gold_magnet"
+  "random_sequence": "magnet:blocks/iron_magnet_block"
 }
