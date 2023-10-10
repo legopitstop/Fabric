@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "breaker",
+	"version": "${version}",
+	"name": "Ultimate Block Breaker",
+	"description": "This mod adds different tiered block breakers to break any blocks (besides bedrock). Perfect for automating cobblestone generators. Not to mention they are easy to use and upgrade.",
+	"authors": [
+		"legopitstop"
+	],
+	"contact": {
+		"homepage": "https://legopitstop.weebly.com",
+		"sources": "https://github.com/legopitstop/Fabric",
+		"issues": "https://github.com/legopitstop/Fabric/issues"
+	},
+	"license": "CC-BY-NC-ND-4.0",
+	"icon": "assets/breaker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.legopitstop.breaker.UltimateBlockBreaker"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
