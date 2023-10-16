@@ -20,3 +20,11 @@ Whenever lightning hits sand it turns into a glass
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Lightning_Bolt_Glass)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:lightning-bolt-glass:fabric-${project.lightningboltglass_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

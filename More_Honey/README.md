@@ -21,3 +21,11 @@ Ever thought that Minecraft needed more honey food? Then this is your mod! This 
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/More_Honey)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:more-honey:fabric-${project.morehoney_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

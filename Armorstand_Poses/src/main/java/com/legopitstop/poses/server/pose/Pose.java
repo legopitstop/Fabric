@@ -14,17 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class Pose {
-    public Identifier id;
-    public int power;
-    public Text displayName;
-    public NbtCompound pose;
-    public EulerAngle headRotation;
-    public EulerAngle bodyRotation;
-    public EulerAngle leftArmRotation;
-    public EulerAngle rightArmRotation;
-    public EulerAngle leftLegRotation;
-    public EulerAngle rightLegRotation;
+public record Pose(Identifier id, int power, Text displayName, NbtCompound pose, EulerAngle headRotation, EulerAngle bodyRotation, EulerAngle leftArmRotation, EulerAngle rightArmRotation, EulerAngle leftLegRotation, EulerAngle rightLegRotation) {
 
     public Pose(Identifier id, Text displayName, int power, EulerAngle headRotation, EulerAngle bodyRotation, EulerAngle leftArmRotation, EulerAngle rightArmRotation, EulerAngle leftLegRotation, EulerAngle rightLegRotation) {
         this.id = id;

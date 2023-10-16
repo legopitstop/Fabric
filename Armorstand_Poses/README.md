@@ -20,3 +20,11 @@ Bedrock armor stand poses for Java Edition.
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/TEMPLATE)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:armor-stand-poses:fabric-${project.poses_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

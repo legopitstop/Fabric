@@ -21,3 +21,11 @@ This mod adds simple magnet items and blocks to make gathering dropped items eas
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Simple_Magnets)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:magnets:fabric-${project.magnets_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

@@ -21,3 +21,11 @@ Bright!! The only light mod that you'll ever need! Bright Includes 5 unique ligh
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Bright)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:bright:fabric-${project.bright_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

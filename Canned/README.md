@@ -21,3 +21,11 @@ This mod adds canned foods! You can place these blocks on the ground. You can ad
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Canned)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:canned:fabric-${project.canned_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

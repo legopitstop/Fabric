@@ -21,3 +21,11 @@ This mod adds 200+ new carved pumpkins to your world that also includes their ja
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/More_Pumpkins)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:more-pumpkin:fabric-${project.morepumpkin_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

@@ -21,3 +21,11 @@ This mod adds new varients of blocks! One block variant that you can find in the
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/More_Blocks)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:more-block:fabric-${project.moreblock_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)

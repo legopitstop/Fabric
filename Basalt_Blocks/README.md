@@ -21,3 +21,11 @@ Two basalt blocks, not enough? Not worth the time to gather? This mod adds basal
 - [Wiki Page](https://github.com/legopitstop/Fabric/wiki/Basalt_Blocks)
 - [License](https://legopitstop.weebly.com/license.html)
 - [Bug Report](https://github.com/legopitstop/Fabric/issues)
+
+## Maven
+```gradle
+dependencies {
+    modImplementation "maven.modrinth:basalt-blocks:fabric-${project.basaltblocks_version}"
+}
+```
+[More Information](https://docs.modrinth.com/docs/tutorials/maven/)
