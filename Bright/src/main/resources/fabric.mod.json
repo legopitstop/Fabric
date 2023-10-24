@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.legopitstop.bright.Bright"
+		],
+		"client": [
+			"com.legopitstop.bright.BrightClient"
 		]
 	},
 	"mixins": [],

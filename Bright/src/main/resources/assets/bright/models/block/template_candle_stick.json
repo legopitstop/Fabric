@@ -40,7 +40,7 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"east": {"uv": [0, 0, 3, 3], "texture": "#candle_stick"},
-				"west": {"uv": [0, 0, 3, 3], "texture": "#candle"}
+				"west": {"uv": [0, 0, 3, 3], "texture": "#candle_stick"}
 			}
 		},
 		{

@@ -1,12 +1,18 @@
 package com.legopitstop.bright.block;
 
 import com.google.common.collect.ImmutableList;
+import com.legopitstop.bright.registry.BrightBlockTags;
 import net.minecraft.block.*;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.Items;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -24,6 +30,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
 public class CandleStickBlock extends AbstractCandleStickBlock implements Waterloggable  {
@@ -67,7 +74,7 @@ public class CandleStickBlock extends AbstractCandleStickBlock implements Waterl
     }
 
     public static boolean canBeLit(BlockState state) {
-        return state.isIn(BlockTags.CANDLES, statex -> statex.contains(LIT) && statex.contains(WATERLOGGED)) && state.get(LIT) == false && state.get(WATERLOGGED) == false;
+        return state.isIn(BrightBlockTags.CANDLE_STICKS, statex -> statex.contains(LIT) && statex.contains(WATERLOGGED)) && state.get(LIT) == false && state.get(WATERLOGGED) == false;
     }
 
     @Override
@@ -79,6 +86,16 @@ public class CandleStickBlock extends AbstractCandleStickBlock implements Waterl
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player.getAbilities().allowModifyWorld && player.getStackInHand(hand).isEmpty() && state.get(LIT).booleanValue()) {
             CandleStickBlock.extinguish(player, state, world, pos);
+            return ActionResult.success(world.isClient);
+        }
+        if (player.getAbilities().allowModifyWorld && canBeLit(state) && (player.getStackInHand(hand).isOf(Items.FLINT_AND_STEEL) || player.getStackInHand(hand).isOf(Items.FIRE_CHARGE)) ) {
+            world.setBlockState(pos, (BlockState)state.with(LIT, true), Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
+            if (player.getStackInHand(hand).isOf(Items.FLINT_AND_STEEL)) {
+                world.playSound(null, pos, SoundEvents.ITEM_FLINTANDSTEEL_USE, SoundCategory.BLOCKS, 1.0f, 1.0f);
+            } else {
+                world.playSound(null, pos, SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.BLOCKS, 1.0f, 1.0f);
+            }
+            world.emitGameEvent((Entity)player, GameEvent.BLOCK_CHANGE, pos);
             return ActionResult.success(world.isClient);
         }
         return ActionResult.PASS;

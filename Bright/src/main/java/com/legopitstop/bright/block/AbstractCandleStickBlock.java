@@ -1,5 +1,6 @@
 package com.legopitstop.bright.block;
 
+import com.legopitstop.bright.registry.BrightBlockTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -28,10 +29,6 @@ public abstract class AbstractCandleStickBlock extends Block {
     }
 
     protected abstract Iterable<Vec3d> getParticleOffsets(BlockState var1);
-
-    public static boolean isLitCandle(BlockState state) {
-        return state.contains(LIT) && (state.isIn(BlockTags.CANDLES) || state.isIn(BlockTags.CANDLE_CAKES)) && state.get(LIT) != false;
-    }
 
     @Override
     public void onProjectileHit(World world, BlockState state, BlockHitResult hit, ProjectileEntity projectile) {
