@@ -4,7 +4,6 @@ import com.legopitstop.lightningglass.server.fulgurite.Fulgurite;
 import net.minecraft.block.pattern.CachedBlockPosition;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 
 import java.util.concurrent.ConcurrentHashMap;
 

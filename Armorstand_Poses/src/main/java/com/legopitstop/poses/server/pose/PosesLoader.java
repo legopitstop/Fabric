@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.legopitstop.poses.ArmorStandPoses;
 import com.legopitstop.poses.registry.PoseRegistry;
+import com.mojang.serialization.JsonOps;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resource.Resource;
 import net.minecraft.resource.ResourceManager;
@@ -11,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 import java.io.InputStreamReader;
 import java.util.Map;
+import java.util.Optional;
 
 public class PosesLoader implements SimpleSynchronousResourceReloadListener {
     public static final Identifier ID = new Identifier(ArmorStandPoses.MOD_ID, "poses");
@@ -28,10 +30,8 @@ public class PosesLoader implements SimpleSynchronousResourceReloadListener {
             Identifier id = resourceId.withPath(resourceId.getPath().replace("poses/", "").replace(".json", ""));
             try {
                 JsonObject jsonObj = (JsonObject) JsonParser.parseReader(new InputStreamReader(resources.get(resourceId).getInputStream()));
-                Pose pose = Pose.fromJson(id, jsonObj);
-                if (pose != null) {
-                    PoseRegistry.add(id, pose);
-                }
+                Optional<Pose> p = Pose.CODEC.parse(JsonOps.INSTANCE, jsonObj).result();
+                p.ifPresent(pose -> PoseRegistry.add(id, pose));
             } catch (Exception e) {
                 ArmorStandPoses.LOGGER.error("Failed to load "+id+": "+e);
             }

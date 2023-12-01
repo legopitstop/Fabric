@@ -1,7 +1,6 @@
 package com.legopitstop.lightningglass.mixin;
 
 import com.legopitstop.lightningglass.registry.FulguriteRegistry;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.pattern.CachedBlockPosition;
 import net.minecraft.entity.LightningEntity;
 import net.minecraft.server.world.ServerWorld;

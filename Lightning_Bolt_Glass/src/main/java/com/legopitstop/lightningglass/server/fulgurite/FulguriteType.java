@@ -1,13 +1,15 @@
 package com.legopitstop.lightningglass.server.fulgurite;
 
-import com.mojang.serialization.Codec;
+import com.google.gson.JsonElement;
 
-public record FulguriteType(Codec<? extends Fulgurite> codec)  {
-    public FulguriteType(Codec<? extends Fulgurite> codec) {
-        this.codec = codec;
+import java.util.function.Function;
+
+public record FulguriteType(Function<JsonElement, Fulgurite> fromJson)  {
+    public FulguriteType(Function<JsonElement, Fulgurite> fromJson) {
+        this.fromJson = fromJson;
     }
 
-    public Codec<? extends Fulgurite> codec() {
-        return this.codec;
+    public Function<JsonElement, Fulgurite> codec() {
+        return this.fromJson;
     }
 }
