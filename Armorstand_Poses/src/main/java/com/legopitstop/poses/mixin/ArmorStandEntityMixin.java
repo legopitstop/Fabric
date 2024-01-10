@@ -1,6 +1,8 @@
 package com.legopitstop.poses.mixin;
 
+import com.legopitstop.poses.ArmorStandPoses;
 import com.legopitstop.poses.registry.PoseRegistry;
+import com.legopitstop.poses.server.pose.ArmorStandPose;
 import com.legopitstop.poses.server.pose.Pose;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityType;
@@ -23,6 +25,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 @Mixin(ArmorStandEntity.class)
 public abstract class ArmorStandEntityMixin {
@@ -71,9 +74,9 @@ public abstract class ArmorStandEntityMixin {
     }
 
     public void setNextPoseType(boolean notify, CallbackInfoReturnable<ActionResult> cir) {
-        ArrayList<Identifier> list = new ArrayList<>();
-        for (Pose p : PoseRegistry.INSTANCE.values()) {
-            list.add(p.getId());
+        ArrayList<Identifier> list = new ArrayList<Identifier>();
+        for (Map.Entry<Identifier, ArmorStandPose> entry : PoseRegistry.INSTANCE.entrySet()) {
+            list.add(entry.getKey());
         }
 
         for (int i=0; i<list.size(); i++) {
@@ -92,9 +95,10 @@ public abstract class ArmorStandEntityMixin {
     }
 
     public void setPowerPoseType(int power, boolean notify) {
-        for (Pose p : PoseRegistry.INSTANCE.values()) {
-            if (p.getPower() ==  power) {
-                this.setPoseType(p.getId(), notify);
+        for (Map.Entry<Identifier, ArmorStandPose> entry : PoseRegistry.INSTANCE.entrySet()) {
+            ArmorStandPose pose = entry.getValue();
+            if (pose.power() ==  power) {
+                this.setPoseType(entry.getKey(), notify);
                 break;
             }
         }
@@ -103,15 +107,15 @@ public abstract class ArmorStandEntityMixin {
     @Unique
     public void setPoseType(Identifier id, boolean notify) {
         ArmorStandEntity entity = (ArmorStandEntity)(Object)this;
-        Pose pose = PoseRegistry.get(id);
+        ArmorStandPose pose = PoseRegistry.get(id);
         if (pose != null) {
             pose.setPose(entity);
             this.poseType = id;
-            if (notify) {
-                MinecraftClient.getInstance().inGameHud.setOverlayMessage(Text.translatable(EntityType.ARMOR_STAND.getTranslationKey() + ".pose", pose.getDisplayName()), false);
-            }
+//            if (notify) {
+//                MinecraftClient.getInstance().inGameHud.setOverlayMessage(Text.translatable(EntityType.ARMOR_STAND.getTranslationKey() + ".pose", pose.displayName()), false);
+//            }
         } else {
-            System.out.println("Unknown pose '"+id+"'");
+            ArmorStandPoses.LOGGER.warn("Unknown pose '"+id+"'");
         }
     }
 

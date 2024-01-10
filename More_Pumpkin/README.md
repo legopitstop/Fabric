@@ -10,7 +10,7 @@ This mod adds 200+ new carved pumpkins to your world that also includes their ja
 |-------------|---------------|
 | supported   | `yes`         |
 | version     | `1.0.0`       |
-| mc_version  | `1.20.x`      |
+| mc_version  | `1.20.4`      |
 | mod_id      | `morepumpkin` |
 | client_side | `required`    |
 | server_side | `required`    |

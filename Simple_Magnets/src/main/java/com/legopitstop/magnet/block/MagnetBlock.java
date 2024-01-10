@@ -1,5 +1,7 @@
 package com.legopitstop.magnet.block;
 
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
@@ -11,7 +13,7 @@ import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
-import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
@@ -19,16 +21,22 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
 
 import java.util.List;
 
 public class MagnetBlock extends FacingBlock {
+    public static final MapCodec<MagnetBlock> CODEC = RecordCodecBuilder.mapCodec((instance) -> {
+        return instance.group(
+                Codecs.POSITIVE_FLOAT.fieldOf("radius").forGetter((MagnetBlock o) -> o.radius),
+                Codecs.POSITIVE_INT.fieldOf("delay").forGetter((MagnetBlock o) -> o.delay),
+                createSettingsCodec()
+        ).apply(instance, MagnetBlock::new);
+    });
     public static final BooleanProperty POWERED = Properties.POWERED;
-    public double radius;
+    public float radius;
     public int delay;
 
-    public MagnetBlock(double radius, int delay, Settings settings) {
+    public MagnetBlock(float radius, int delay, Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH)).with(POWERED, false));
         this.radius = radius;
@@ -97,5 +105,10 @@ public class MagnetBlock extends FacingBlock {
     @Override
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         return false;
+    }
+
+    @Override
+    protected MapCodec<? extends FacingBlock> getCodec() {
+        return CODEC;
     }
 }

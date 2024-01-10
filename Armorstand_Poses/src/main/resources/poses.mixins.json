@@ -4,7 +4,7 @@
   "package": "com.legopitstop.poses.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": ["ArmorStandEntityMixin"],
-  "client": [],
+  "client": ["ArmorStandEntityClientMixin"],
   "server": [],
   "injectors": {
     "defaultRequire": 1

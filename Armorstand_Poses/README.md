@@ -10,7 +10,7 @@ Bedrock armor stand poses for Java Edition.
 |-------------|------------|
 | supported   | `yes`      |
 | version     | `1.0.0 `   |
-| mc_version  | `1.20.1`   |
+| mc_version  | `1.20.4`   |
 | client_side | `optional` |
 | server_side | `required` |
 

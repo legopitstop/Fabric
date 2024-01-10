@@ -10,7 +10,7 @@ Ever thought that Minecraft needed more golden food? Then this is your mod! This
 |-------------|-----------|
 | supported   | `yes`     |
 | version     | `1.0.0`   |
-| mc_version  | `1.20.1`  |
+| mc_version  | `1.20.4`  |
 | mod_id      | `moregold`|
 | client_side | `required`|
 | server_side | `required`|

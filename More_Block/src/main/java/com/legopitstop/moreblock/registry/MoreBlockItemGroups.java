@@ -1,7 +1,6 @@
 package com.legopitstop.moreblock.registry;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroups;
 
 public class MoreBlockItemGroups {

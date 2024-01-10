@@ -13,5 +13,8 @@ public class MoreBlock implements ModInitializer {
 		MoreBlockBlocks.register();
 		MoreBlockItems.register();
 		MoreBlockItemGroups.register();
+
+		// Strippable
+		// Needs custom implemntation (StrippableBlockRegistry requires 'axis' property)
 	}
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "basaltblocks:block/basalt_cobblestone"
+      "model": "basaltblocks:block/cobbled_basalt"
     }
   }
 }

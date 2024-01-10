@@ -44,11 +44,11 @@
     "block.basaltblocks.polished_basalt_brick_door": "Polished Basalt Brick Door",
     "block.basaltblocks.polished_basalt_brick_trapdoor": "Polished Basalt Brick Trapdoor",
 
-    "block.basaltblocks.basalt_cobblestone": "Basalt Cobblestone Bricks",
-    "block.basaltblocks.basalt_cobblestone_slab": "Basalt Cobblestone Slab",
-    "block.basaltblocks.basalt_cobblestone_stairs": "Basalt Cobblestone Stairs",
-    "block.basaltblocks.basalt_cobblestone_wall": "Basalt Cobblestone Wall",
-    "block.basaltblocks.basalt_cobblestone_button": "Basalt Cobblestone Button",
-    "block.basaltblocks.basalt_cobblestone_pressure_plate": "Basalt Cobblestone Pressure Plate"
+    "block.basaltblocks.basalt_cobblestone": "Cobbled Basalt Bricks",
+    "block.basaltblocks.basalt_cobblestone_slab": "Cobbled Basalt Slab",
+    "block.basaltblocks.basalt_cobblestone_stairs": "Cobbled Basalt Stairs",
+    "block.basaltblocks.basalt_cobblestone_wall": "Cobbled Basalt Wall",
+    "block.basaltblocks.basalt_cobblestone_button": "Cobbled Basalt Button",
+    "block.basaltblocks.basalt_cobblestone_pressure_plate": "Cobbled Basalt Pressure Plate"
 
 }

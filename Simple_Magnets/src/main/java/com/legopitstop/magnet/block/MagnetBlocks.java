@@ -10,13 +10,13 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class MagnetBlocks {
-    public static final Block IRON_MAGNET_BLOCK = createMagnetBlock(3.425, 10);
-    public static final Block GOLD_MAGNET_BLOCK = createMagnetBlock(5.425, 8);
-    public static final Block COPPER_MAGNET_BLOCK = createMagnetBlock(7.425, 6);
-    public static final Block DIAMOND_MAGNET_BLOCK = createMagnetBlock(9.425, 4);
-    public static final Block NETHERITE_MAGNET_BLOCK = createMagnetBlock(11.425, 2);
+    public static final Block IRON_MAGNET_BLOCK = createMagnetBlock(3.425F, 10);
+    public static final Block GOLD_MAGNET_BLOCK = createMagnetBlock(5.425F, 8);
+    public static final Block COPPER_MAGNET_BLOCK = createMagnetBlock(7.425F, 6);
+    public static final Block DIAMOND_MAGNET_BLOCK = createMagnetBlock(9.425F, 4);
+    public static final Block NETHERITE_MAGNET_BLOCK = createMagnetBlock(11.425F, 2);
 
-    public static Block createMagnetBlock(double radius, int delay) {
+    public static Block createMagnetBlock(float radius, int delay) {
         return new MagnetBlock(radius, delay, FabricBlockSettings.create().mapColor(MapColor.STONE_GRAY).strength(1.5f).solid().pistonBehavior(PistonBehavior.NORMAL).ticksRandomly());
     }
     public static void register() {

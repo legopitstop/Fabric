@@ -10,7 +10,7 @@ Ever thought that Minecraft needed more honey food? Then this is your mod! This 
 |-------------|-------------|
 | supported   | `yes`       |
 | version     | `1.0.0`     |
-| mc_version  | `1.20.x`    |
+| mc_version  | `1.20.4`    |
 | mod_id      | `morehoney` |
 | client_side | `required`  |
 | server_side | `required`  |

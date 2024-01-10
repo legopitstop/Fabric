@@ -7,6 +7,7 @@ import com.legopitstop.moreblock.block.RedstoneOreLayerBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -22,6 +23,8 @@ public class MoreBlockBlocks {
     public static final Block CHERRY_LOG_LAYER = createLogLayerBlock(MapColor.TERRACOTTA_WHITE, BlockSoundGroup.CHERRY_WOOD);
     public static final Block DARK_OAK_LOG_LAYER = createLogLayerBlock(MapColor.BROWN);
     public static final Block MANGROVE_LOG_LAYER = createLogLayerBlock(MapColor.RED);
+    public static final Block BAMBOO_BLOCK_LAYER = createLogLayerBlock(MapColor.YELLOW, BlockSoundGroup.BAMBOO_WOOD);
+
     public static final Block STRIPPED_SPRUCE_LOG_LAYER = createLogLayerBlock(MapColor.SPRUCE_BROWN);
     public static final Block STRIPPED_BIRCH_LOG_LAYER = createLogLayerBlock(MapColor.PALE_YELLOW);
     public static final Block STRIPPED_JUNGLE_LOG_LAYER = createLogLayerBlock(MapColor.DIRT_BROWN);
@@ -31,7 +34,6 @@ public class MoreBlockBlocks {
     public static final Block STRIPPED_OAK_LOG_LAYER = createLogLayerBlock(MapColor.OAK_TAN);
     public static final Block STRIPPED_MANGROVE_LOG_LAYER = createLogLayerBlock(MapColor.RED);
     public static final Block STRIPPED_BAMBOO_BLOCK_LAYER = createLogLayerBlock(MapColor.YELLOW);
-    public static final Block BAMBOO_BLOCK_LAYER = createLogLayerBlock(MapColor.YELLOW, BlockSoundGroup.BAMBOO_WOOD);
     public static final Block STRIPPED_MANGROVE_WOOD_LAYER = createLogLayerBlock(MapColor.RED);
 
     public static final Block REDSTONE_ORE_LAYER = new RedstoneOreLayerBlock(FabricBlockSettings.copyOf(Blocks.REDSTONE_ORE));

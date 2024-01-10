@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "basaltblocks:block/basalt_cobblestone",
-    "top": "basaltblocks:block/basalt_cobblestone",
-    "side": "basaltblocks:block/basalt_cobblestone"
-  }
-}

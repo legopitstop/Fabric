@@ -10,7 +10,7 @@ This mod adds new varients of blocks! One block variant that you can find in the
 |-------------|-------------|
 | supported   | `yes`       |
 | version     | `1.0.0`     |
-| mc_version  | `1.20.x`    |
+| mc_version  | `1.20.4`    |
 | mod_id      | `moreblock` |
 | client_side | `required`  |
 | server_side | `required`  |

@@ -35,12 +35,12 @@ public class BasaltBlockItems {
     public static final Item POLISHED_BASALT_BRICK_WALL = new BlockItem(BasaltBlockBlocks.POLISHED_BASALT_BRICK_WALL, new FabricItemSettings());
     public static final Item POLISHED_BASALT_BRICK_BUTTON = new BlockItem(BasaltBlockBlocks.POLISHED_BASALT_BRICK_BUTTON, new FabricItemSettings());
     public static final Item POLISHED_BASALT_BRICK_PRESSURE_PLATE = new BlockItem(BasaltBlockBlocks.POLISHED_BASALT_BRICK_PRESSURE_PLATE, new FabricItemSettings());
-    public static final Item BASALT_COBBLESTONE = new BlockItem(BasaltBlockBlocks.BASALT_COBBLESTONE, new FabricItemSettings());
-    public static final Item BASALT_COBBLESTONE_SLAB = new BlockItem(BasaltBlockBlocks.BASALT_COBBLESTONE_SLAB, new FabricItemSettings());
-    public static final Item BASALT_COBBLESTONE_STAIRS = new BlockItem(BasaltBlockBlocks.BASALT_COBBLESTONE_STAIRS, new FabricItemSettings());
-    public static final Item BASALT_COBBLESTONE_WALL = new BlockItem(BasaltBlockBlocks.BASALT_COBBLESTONE_WALL, new FabricItemSettings());
-    public static final Item BASALT_COBBLESTONE_BUTTON = new BlockItem(BasaltBlockBlocks.BASALT_COBBLESTONE_BUTTON, new FabricItemSettings());
-    public static final Item BASALT_COBBLESTONE_PRESSURE_PLATE = new BlockItem(BasaltBlockBlocks.BASALT_COBBLESTONE_PRESSURE_PLATE, new FabricItemSettings());
+    public static final Item COBBLED_BASALT = new BlockItem(BasaltBlockBlocks.COBBLED_BASALT, new FabricItemSettings());
+    public static final Item COBBLED_BASALT_SLAB = new BlockItem(BasaltBlockBlocks.COBBLED_BASALT_SLAB, new FabricItemSettings());
+    public static final Item COBBLED_BASALT_STAIRS = new BlockItem(BasaltBlockBlocks.COBBLED_BASALT_STAIRS, new FabricItemSettings());
+    public static final Item COBBLED_BASALT_WALL = new BlockItem(BasaltBlockBlocks.COBBLED_BASALT_WALL, new FabricItemSettings());
+    public static final Item COBBLED_BASALT_BUTTON = new BlockItem(BasaltBlockBlocks.COBBLED_BASALT_BUTTON, new FabricItemSettings());
+    public static final Item COBBLED_BASALT_PRESSURE_PLATE = new BlockItem(BasaltBlockBlocks.COBBLED_BASALT_PRESSURE_PLATE, new FabricItemSettings());
 
     public static void register() {
         Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_slab"), BASALT_SLAB);
@@ -69,12 +69,11 @@ public class BasaltBlockItems {
         Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "polished_basalt_brick_wall"), POLISHED_BASALT_BRICK_WALL);
         Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "polished_basalt_brick_button"), POLISHED_BASALT_BRICK_BUTTON);
         Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "polished_basalt_brick_pressure_plate"), POLISHED_BASALT_BRICK_PRESSURE_PLATE);
-        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone"), BASALT_COBBLESTONE);
-        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_slab"), BASALT_COBBLESTONE_SLAB);
-        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_stairs"), BASALT_COBBLESTONE_STAIRS);
-        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_wall"), BASALT_COBBLESTONE_WALL);
-        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_button"), BASALT_COBBLESTONE_BUTTON);
-        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_pressure_plate"), BASALT_COBBLESTONE_PRESSURE_PLATE);
-
+        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone"), COBBLED_BASALT);
+        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_slab"), COBBLED_BASALT_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_stairs"), COBBLED_BASALT_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_wall"), COBBLED_BASALT_WALL);
+        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_button"), COBBLED_BASALT_BUTTON);
+        Registry.register(Registries.ITEM, new Identifier(BasaltBlocks.MOD_ID, "basalt_cobblestone_pressure_plate"), COBBLED_BASALT_PRESSURE_PLATE);
     }
 }

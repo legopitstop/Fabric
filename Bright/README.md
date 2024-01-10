@@ -10,7 +10,7 @@ Bright!! The only light mod that you'll ever need! Bright Includes 5 unique ligh
 |-------------|------------|
 | supported   | `yes`      |
 | version     | `1.0.1`    |
-| mc_version  | `1.20.x`   |
+| mc_version  | `1.20.4`   |
 | mod_id      | `bright`   |
 | client_side | `required` |
 | server_side | `required` |

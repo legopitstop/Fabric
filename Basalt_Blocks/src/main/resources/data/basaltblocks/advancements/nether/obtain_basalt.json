@@ -21,7 +21,13 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:basalt"
+            "items": [
+              "minecraft:basalt",
+              "minecraft:polished_basalt",
+              "minecraft:smooth_basalt",
+              "basaltblocks:basalt_cobblestone",
+              "basaltblocks:polished_basalt_bricks"
+            ]
           }
         ]
       }
@@ -31,5 +37,6 @@
     [
       "basalt"
     ]
-  ]
+  ],
+  "sends_telemetry_event": false
 }
