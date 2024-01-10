@@ -36,5 +36,6 @@ public class PosesLoader implements SimpleSynchronousResourceReloadListener {
                 ArmorStandPoses.LOGGER.error("Failed to load "+id+": "+e);
             }
         }
+        ArmorStandPoses.LOGGER.info("Loaded "+PoseRegistry.size()+" poses.");
     }
 }

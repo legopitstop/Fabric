@@ -3,6 +3,7 @@ package com.legopitstop.poses.server.pose;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.nbt.*;
 import net.minecraft.text.Text;
@@ -120,5 +121,9 @@ public class Pose {
         if (this.leftLegRotation != null) {entity.setLeftLegRotation(this.leftLegRotation);}
         if (this.rightLegRotation != null) {entity.setRightLegRotation(this.rightLegRotation);}
 
+    }
+
+    public String getTranslationKey() {
+        return EntityType.ARMOR_STAND.getTranslationKey() + ".pose";
     }
 }

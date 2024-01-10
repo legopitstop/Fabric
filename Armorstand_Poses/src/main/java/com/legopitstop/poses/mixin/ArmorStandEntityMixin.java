@@ -1,13 +1,14 @@
 package com.legopitstop.poses.mixin;
 
+import com.legopitstop.poses.ArmorStandPoses;
 import com.legopitstop.poses.registry.PoseRegistry;
 import com.legopitstop.poses.server.pose.Pose;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -23,6 +24,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 @Mixin(ArmorStandEntity.class)
 public abstract class ArmorStandEntityMixin {
@@ -35,7 +37,7 @@ public abstract class ArmorStandEntityMixin {
     public void init(CallbackInfo io) {
         ArmorStandEntity entity = (ArmorStandEntity)(Object)this;
         if (!entity.getWorld().isClient()) {
-            this.setPoseType(new Identifier("default"), false);
+            this.setPoseType(new Identifier("default"), null);
         }
     }
 
@@ -62,7 +64,7 @@ public abstract class ArmorStandEntityMixin {
         ArmorStandEntity entity = (ArmorStandEntity)(Object)this;
         ItemStack itemStack = player.getStackInHand(hand);
         if (itemStack.isEmpty() && player.isSneaking() && !entity.isInvisible() && this.power == 0) {
-            setNextPoseType(true, cir);
+            setNextPoseType(player, cir);
         }
     }
 
@@ -70,7 +72,7 @@ public abstract class ArmorStandEntityMixin {
         return this.poseType == null ? DEFAULT_POSE_TYPE : this.poseType;
     }
 
-    public void setNextPoseType(boolean notify, CallbackInfoReturnable<ActionResult> cir) {
+    public void setNextPoseType(PlayerEntity player, CallbackInfoReturnable<ActionResult> cir) {
         ArrayList<Identifier> list = new ArrayList<>();
         for (Pose p : PoseRegistry.INSTANCE.values()) {
             list.add(p.getId());
@@ -81,9 +83,9 @@ public abstract class ArmorStandEntityMixin {
             if (id.equals(this.getPoseType())) {
                 Identifier next = i<list.size()-1 ? list.get(i+1) : null;
                 if (next != null) {
-                    this.setPoseType(next, notify);
+                    this.setPoseType(next, player);
                 } else {
-                    this.setPoseType(list.get(0), notify);
+                    this.setPoseType(list.get(0), player);
                 }
                 cir.setReturnValue(ActionResult.SUCCESS);
                 break;
@@ -94,24 +96,24 @@ public abstract class ArmorStandEntityMixin {
     public void setPowerPoseType(int power, boolean notify) {
         for (Pose p : PoseRegistry.INSTANCE.values()) {
             if (p.getPower() ==  power) {
-                this.setPoseType(p.getId(), notify);
+                this.setPoseType(p.getId(), null);
                 break;
             }
         }
     }
 
     @Unique
-    public void setPoseType(Identifier id, boolean notify) {
+    public void setPoseType(Identifier id, PlayerEntity player) {
         ArmorStandEntity entity = (ArmorStandEntity)(Object)this;
         Pose pose = PoseRegistry.get(id);
         if (pose != null) {
             pose.setPose(entity);
             this.poseType = id;
-            if (notify) {
-                MinecraftClient.getInstance().inGameHud.setOverlayMessage(Text.translatable(EntityType.ARMOR_STAND.getTranslationKey() + ".pose", pose.getDisplayName()), false);
+            if (player != null) {
+                player.sendMessage(Text.translatable(pose.getTranslationKey(), pose.getDisplayName()), true);
             }
         } else {
-            System.out.println("Unknown pose '"+id+"'");
+            ArmorStandPoses.LOGGER.warn("Unknown pose '"+id+"'");
         }
     }
 
