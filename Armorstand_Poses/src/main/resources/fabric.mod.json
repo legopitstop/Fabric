@@ -17,7 +17,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.poses.ArmorStandPoses"
+          "dev.lpsmods.poses.ArmorStandPoses"
 		]
 	},
 	"mixins": [
