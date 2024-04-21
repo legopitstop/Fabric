@@ -1,0 +1,103 @@
+{
+
+  "block.basalt_door.close": {
+    "sounds": [
+      {
+        "name": "basaltblocks:block/basalt_door/toggle1",
+        "volume": 0.9
+      },
+      {
+        "name": "basaltblocks:block/basalt_door/toggle2",
+        "volume": 0.9
+      },
+      {
+        "name": "basaltblocks:block/basalt_door/toggle3",
+        "volume": 0.9
+      },
+      {
+        "name": "basaltblocks:block/basalt_door/toggle4",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.block.door.toggle"
+  },
+  "block.basalt_door.open": {
+    "sounds": [
+      {
+        "name": "basaltblocks:block/basalt_door/toggle1",
+        "volume": 0.9
+      },
+      {
+        "name": "basaltblocks:block/basalt_door/toggle2",
+        "volume": 0.9
+      },
+      {
+        "name": "basaltblocks:block/basalt_door/toggle3",
+        "volume": 0.9
+      },
+      {
+        "name": "basaltblocks:block/basalt_door/toggle4",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.block.door.toggle"
+  },
+  "block.basalt_trapdoor.close": {
+    "sounds": [
+      "basaltblocks:block/basalt_trapdoor/toggle1",
+      "basaltblocks:block/basalt_trapdoor/toggle2",
+      "basaltblocks:block/basalt_trapdoor/toggle3",
+      "basaltblocks:block/basalt_trapdoor/toggle4"
+    ],
+    "subtitle": "subtitles.block.trapdoor.toggle"
+  },
+  "block.basalt_trapdoor.open": {
+    "sounds": [
+      "basaltblocks:block/basalt_trapdoor/toggle1",
+      "basaltblocks:block/basalt_trapdoor/toggle2",
+      "basaltblocks:block/basalt_trapdoor/toggle3",
+      "basaltblocks:block/basalt_trapdoor/toggle4"
+    ],
+    "subtitle": "subtitles.block.trapdoor.toggle"
+  },
+  "block.basalt_button.click_off": {
+    "sounds": [
+      {
+        "name": "basaltblocks:block/basalt_button/click",
+        "pitch": 0.5,
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.block.button.click"
+  },
+  "block.basalt_button.click_on": {
+    "sounds": [
+      {
+        "name": "basaltblocks:block/basalt_button/click",
+        "pitch": 0.6,
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.block.button.click"
+  },
+  "block.basalt_pressure_plate.click_off": {
+    "sounds": [
+      {
+        "name": "random/click",
+        "pitch": 0.7,
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.block.pressure_plate.click"
+  },
+  "block.basalt_pressure_plate.click_on": {
+    "sounds": [
+      {
+        "name": "random/click",
+        "pitch": 0.8,
+        "volume": 0.3
+      }
+    ],
+    "subtitle": "subtitles.block.pressure_plate.click"
+  }
+}

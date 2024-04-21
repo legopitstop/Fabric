@@ -3,7 +3,9 @@
   "minVersion": "0.8",
   "package": "com.legopitstop.lightningglass.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": ["LightningEntityMixin"],
+  "mixins": [
+    "dev.lpsmods.lightningglass.mixin.LightningEntityMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {

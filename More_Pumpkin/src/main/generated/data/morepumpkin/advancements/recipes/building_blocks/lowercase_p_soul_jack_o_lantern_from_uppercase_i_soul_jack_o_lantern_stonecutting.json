@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:lowercase_p_soul_jack_o_lantern_from_uppercase_i_soul_jack_o_lantern_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uppercase_i_soul_jack_o_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morepumpkin:uppercase_i_soul_jack_o_lantern"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_uppercase_i_soul_jack_o_lantern"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:lowercase_p_soul_jack_o_lantern_from_uppercase_i_soul_jack_o_lantern_stonecutting"
+    ]
+  }
+}

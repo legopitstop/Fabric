@@ -17,10 +17,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.moreblock.MoreBlock"
+			"dev.legopitstop.moreblock.MoreBlock"
 		],
 		"client": [
-			"com.legopitstop.moreblock.MoreBlockClient"
+			"dev.legopitstop.moreblock.MoreBlockClient"
 		]
 	},
 	"mixins": [],

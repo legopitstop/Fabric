@@ -17,13 +17,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.moregold.MoreGold"
+			"dev.legopitstop.moregold.MoreGold"
 		],
 		"fabric-datagen": [
-			"com.legopitstop.moregold.MoreGoldDataGenerator"
+			"dev.legopitstop.moregold.MoreGoldDataGenerator"
 		],
 		"client": [
-			"com.legopitstop.moregold.MoreGoldClient"
+			"dev.legopitstop.moregold.MoreGoldClient"
 		]
 	},
 	"mixins": [],

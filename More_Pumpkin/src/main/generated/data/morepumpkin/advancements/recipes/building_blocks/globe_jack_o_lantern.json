@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_globe_carved_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morepumpkin:globe_carved_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_globe_jack_o_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morepumpkin:globe_jack_o_lantern"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morepumpkin:globe_jack_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_globe_carved_pumpkin",
+      "has_globe_jack_o_lantern"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morepumpkin:globe_jack_o_lantern"
+    ]
+  }
+}

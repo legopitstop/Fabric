@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.bright.Bright"
+          "dev.legopitstop.bright.Bright"
 		],
 		"client": [
-			"com.legopitstop.bright.BrightClient"
+          "dev.legopitstop.bright.BrightClient"
 		]
 	},
 	"mixins": [],

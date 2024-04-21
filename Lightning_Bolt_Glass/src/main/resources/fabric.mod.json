@@ -17,7 +17,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.lightningglass.LightningGlass"
+			"dev.lpsmods.lightningglass.LightningGlass"
 		]
 	},
 	"mixins": [

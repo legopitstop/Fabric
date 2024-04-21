@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.spawnercraft.SpawnerCraft"
+			"dev.legopitstop.spawnercraft.SpawnerCraft"
 		],
 		"fabric-datagen": [
-			"com.legopitstop.spawnercraft.SpawnerCraftDataGenerator"
+			"dev.legopitstop.spawnercraft.SpawnerCraftDataGenerator"
 		]
 	},
 	"mixins": [],
