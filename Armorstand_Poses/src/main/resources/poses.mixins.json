@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.legopitstop.poses.mixin",
+  "package": "dev.lpsmods.poses.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": ["ArmorStandEntityMixin"],
-  "client": ["ArmorStandEntityClientMixin"],
-  "server": [],
+  "mixins": [
+    "ArmorStandEntityMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

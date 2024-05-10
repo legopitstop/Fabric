@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 0,
+  "ingredient": {
+    "item": "minecraft:carved_pumpkin"
+  },
+  "result": "minecraft:air"
+}

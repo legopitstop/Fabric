@@ -17,7 +17,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.legopitstop.breaker.UltimateBlockBreaker"
+			"dev.legopitstop.breaker.UltimateBlockBreaker"
 		]
 	},
 	"depends": {

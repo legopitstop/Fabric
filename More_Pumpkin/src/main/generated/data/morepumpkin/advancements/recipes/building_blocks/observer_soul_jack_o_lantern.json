@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_observer_carved_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morepumpkin:observer_carved_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_observer_soul_jack_o_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "morepumpkin:observer_soul_jack_o_lantern"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morepumpkin:observer_soul_jack_o_lantern"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_observer_carved_pumpkin",
+      "has_observer_soul_jack_o_lantern"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morepumpkin:observer_soul_jack_o_lantern"
+    ]
+  }
+}

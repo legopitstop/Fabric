@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "morepumpkin:flower_jack_o_lantern"
+  },
+  "result": "morepumpkin:lowercase_l_jack_o_lantern"
+}

@@ -16,8 +16,11 @@
 	"icon": "assets/morepumpkin/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+          "dev.legopitstop.morepumpkins.util.MorePumpkinsDataGenerator"
+		],
 		"main": [
-			"com.legopitstop.morepumpkins.MorePumpkins"
+          "dev.legopitstop.morepumpkins.MorePumpkins"
 		]
 	},
 	"mixins": [],
