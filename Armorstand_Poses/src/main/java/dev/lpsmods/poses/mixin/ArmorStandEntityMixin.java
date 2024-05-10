@@ -1,6 +1,7 @@
 package dev.lpsmods.poses.mixin;
 
 import dev.lpsmods.poses.ArmorStandPoses;
+import dev.lpsmods.poses.api.ChangePoseCallback;
 import dev.lpsmods.poses.registry.PoseRegistry;
 import dev.lpsmods.poses.server.pose.ArmorStandPose;
 import net.minecraft.entity.EntityType;
@@ -115,6 +116,7 @@ public abstract class ArmorStandEntityMixin {
         if (pose != null) {
             pose.setPose(entity);
             this.poseType = id;
+            ChangePoseCallback.EVENT.invoker().changePose(entity, pose);
         } else {
             ArmorStandPoses.LOGGER.warn("Unknown pose '"+id+"'");
             return null;
