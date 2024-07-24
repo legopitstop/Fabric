@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "basaltblocks:polished_basalt_slab"
+    }
+  },
+  "result": {
+    "id": "basaltblocks:chiseled_polished_basalt"
+  }
+}

@@ -9,8 +9,8 @@ Two basalt blocks, not enough? Not worth the time to gather? This mod adds basal
 | Key         | Value          |
 |-------------|----------------|
 | supported   | `yes`          |
-| version     | `1.0.0`        |
-| mc_version  | `1.20.4`       |
+| version     | `1.0.2`        |
+| mc_version  | `1.21`         |
 | mod_id      | `basaltblocks` |
 | client_side | `required`     |
 | server_side | `required`     |

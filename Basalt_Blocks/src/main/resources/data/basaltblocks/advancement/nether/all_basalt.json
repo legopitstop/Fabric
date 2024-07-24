@@ -1,0 +1,38 @@
+{
+  "parent": "basaltblocks:nether/obtain_basalt",
+  "display": {
+    "icon": {
+      "id": "basaltblocks:polished_basalt_bricks"
+    },
+    "title": {
+      "translate": "advancements.nether.gather_all_basalt.title"
+    },
+    "description": {
+      "translate": "advancements.nether.gather_all_basalt.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "basalt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"items":["minecraft:basalt"]},
+          {"items":["minecraft:polished_basalt"]},
+          {"items":["minecraft:smooth_basalt"]},
+          {"items":["basaltblocks:basalt_cobblestone"]},
+          {"items":["basaltblocks:polished_basalt_bricks"]}
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "basalt"
+    ]
+  ],
+  "sends_telemetry_event": false
+}
