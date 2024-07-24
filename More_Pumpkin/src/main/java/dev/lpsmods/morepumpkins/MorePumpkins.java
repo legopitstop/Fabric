@@ -1,7 +1,6 @@
 package dev.lpsmods.morepumpkins;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -24,9 +23,9 @@ public class MorePumpkins implements ModInitializer {
 	public void onInitialize() {
 		// Create soul_jack_o_lantern
 		Block soul_block = new CarvedPumpkinBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance((state) -> {return 8;}).allowsSpawning(Blocks::always).pistonBehavior(PistonBehavior.DESTROY));
-		Item soul_item = new BlockItem(soul_block, new FabricItemSettings());
-		Registry.register(Registries.BLOCK, new Identifier(MorePumpkins.MOD_ID, "soul_jack_o_lantern"), soul_block);
-		Registry.register(Registries.ITEM, new Identifier(MorePumpkins.MOD_ID, "soul_jack_o_lantern"), soul_item);
+		Item soul_item = new BlockItem(soul_block, new Item.Settings());
+		Registry.register(Registries.BLOCK, Identifier.of(MorePumpkins.MOD_ID, "soul_jack_o_lantern"), soul_block);
+		Registry.register(Registries.ITEM, Identifier.of(MorePumpkins.MOD_ID, "soul_jack_o_lantern"), soul_item);
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
 			entries.addAfter(Items.JACK_O_LANTERN, soul_item);
@@ -39,23 +38,22 @@ public class MorePumpkins implements ModInitializer {
 			Block block2 = new CarvedPumpkinBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance((state) -> {return 15;}).allowsSpawning(Blocks::always).pistonBehavior(PistonBehavior.DESTROY));
 			Block block3 = new CarvedPumpkinBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance((state) -> {return 10;}).allowsSpawning(Blocks::always).pistonBehavior(PistonBehavior.DESTROY));
 
-			Item item1 = new BlockItem(block1, new FabricItemSettings());
-			Item item2 = new BlockItem(block2, new FabricItemSettings());
-			Item item3 = new BlockItem(block3, new FabricItemSettings());
+			Item item1 = new BlockItem(block1, new Item.Settings());
+			Item item2 = new BlockItem(block2, new Item.Settings());
+			Item item3 = new BlockItem(block3, new Item.Settings());
 
-			Registry.register(Registries.BLOCK, new Identifier(MorePumpkins.MOD_ID, prefix+"_carved_pumpkin"), block1);
-			Registry.register(Registries.BLOCK, new Identifier(MorePumpkins.MOD_ID, prefix+"_jack_o_lantern"), block2);
-			Registry.register(Registries.BLOCK, new Identifier(MorePumpkins.MOD_ID, prefix+"_soul_jack_o_lantern"), block3);
-			Registry.register(Registries.ITEM, new Identifier(MorePumpkins.MOD_ID, prefix+"_carved_pumpkin"), item1);
-			Registry.register(Registries.ITEM, new Identifier(MorePumpkins.MOD_ID, prefix+"_jack_o_lantern"), item2);
-			Registry.register(Registries.ITEM, new Identifier(MorePumpkins.MOD_ID, prefix+"_soul_jack_o_lantern"), item3);
+			Registry.register(Registries.BLOCK, Identifier.of(MorePumpkins.MOD_ID, prefix+"_carved_pumpkin"), block1);
+			Registry.register(Registries.BLOCK, Identifier.of(MorePumpkins.MOD_ID, prefix+"_jack_o_lantern"), block2);
+			Registry.register(Registries.BLOCK, Identifier.of(MorePumpkins.MOD_ID, prefix+"_soul_jack_o_lantern"), block3);
+			Registry.register(Registries.ITEM, Identifier.of(MorePumpkins.MOD_ID, prefix+"_carved_pumpkin"), item1);
+			Registry.register(Registries.ITEM, Identifier.of(MorePumpkins.MOD_ID, prefix+"_jack_o_lantern"), item2);
+			Registry.register(Registries.ITEM, Identifier.of(MorePumpkins.MOD_ID, prefix+"_soul_jack_o_lantern"), item3);
 
 			ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
 				entries.addAfter(soul_item, item1);
 				entries.addAfter(item1, item2);
 				entries.addAfter(item2, item3);
 			});
-			Blocks.OAK_PLANKS
 		}
 	}
 }

@@ -19,10 +19,10 @@ public class MagnetBlocks {
         return new MagnetBlock(radius, delay, FabricBlockSettings.create().mapColor(MapColor.STONE_GRAY).strength(1.5f).solid().pistonBehavior(PistonBehavior.NORMAL).ticksRandomly());
     }
     public static void register() {
-        Registry.register(Registries.BLOCK, new Identifier(SimpleMagnets.MOD_ID, "copper_magnet_block"), COPPER_MAGNET_BLOCK);
-        Registry.register(Registries.BLOCK, new Identifier(SimpleMagnets.MOD_ID, "diamond_magnet_block"), DIAMOND_MAGNET_BLOCK);
-        Registry.register(Registries.BLOCK, new Identifier(SimpleMagnets.MOD_ID, "gold_magnet_block"), GOLD_MAGNET_BLOCK);
-        Registry.register(Registries.BLOCK, new Identifier(SimpleMagnets.MOD_ID, "iron_magnet_block"), IRON_MAGNET_BLOCK);
-        Registry.register(Registries.BLOCK, new Identifier(SimpleMagnets.MOD_ID, "netherite_magnet_block"), NETHERITE_MAGNET_BLOCK);
+        Registry.register(Registries.BLOCK, Identifier.of(SimpleMagnets.MOD_ID, "copper_magnet_block"), COPPER_MAGNET_BLOCK);
+        Registry.register(Registries.BLOCK, Identifier.of(SimpleMagnets.MOD_ID, "diamond_magnet_block"), DIAMOND_MAGNET_BLOCK);
+        Registry.register(Registries.BLOCK, Identifier.of(SimpleMagnets.MOD_ID, "gold_magnet_block"), GOLD_MAGNET_BLOCK);
+        Registry.register(Registries.BLOCK, Identifier.of(SimpleMagnets.MOD_ID, "iron_magnet_block"), IRON_MAGNET_BLOCK);
+        Registry.register(Registries.BLOCK, Identifier.of(SimpleMagnets.MOD_ID, "netherite_magnet_block"), NETHERITE_MAGNET_BLOCK);
     }
 }

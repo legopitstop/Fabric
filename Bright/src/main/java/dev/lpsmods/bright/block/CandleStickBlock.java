@@ -15,10 +15,7 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
-import net.minecraft.util.Hand;
+import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -80,11 +77,10 @@ public class CandleStickBlock extends AbstractCandleStickBlock implements Waterl
         return state.get(WATERLOGGED) == false && super.isNotLit(state);
     }
 
-    @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public ItemActionResult onUseWithItem(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player.getAbilities().allowModifyWorld && player.getStackInHand(hand).isEmpty() && state.get(LIT).booleanValue()) {
             CandleStickBlock.extinguish(player, state, world, pos);
-            return ActionResult.success(world.isClient);
+            return ItemActionResult.success(world.isClient);
         }
         if (player.getAbilities().allowModifyWorld && canBeLit(state) && (player.getStackInHand(hand).isOf(Items.FLINT_AND_STEEL) || player.getStackInHand(hand).isOf(Items.FIRE_CHARGE)) ) {
             world.setBlockState(pos, (BlockState)state.with(LIT, true), Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
@@ -94,9 +90,9 @@ public class CandleStickBlock extends AbstractCandleStickBlock implements Waterl
                 world.playSound(null, pos, SoundEvents.ITEM_FIRECHARGE_USE, SoundCategory.BLOCKS, 1.0f, 1.0f);
             }
             world.emitGameEvent((Entity)player, GameEvent.BLOCK_CHANGE, pos);
-            return ActionResult.success(world.isClient);
+            return ItemActionResult.success(world.isClient);
         }
-        return ActionResult.PASS;
+        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
     // COMMON

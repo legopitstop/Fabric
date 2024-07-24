@@ -22,7 +22,6 @@ public class HoneyLemonTeaItem extends HotBeverageCupItem {
         }
 
         if (!world.isClient) {
-            System.out.println("remove poison");
             user.removeStatusEffect(StatusEffects.POISON);
         }
 

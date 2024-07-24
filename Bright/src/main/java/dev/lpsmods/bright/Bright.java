@@ -5,7 +5,7 @@ import dev.lpsmods.bright.registry.BrightItemGroups;
 import dev.lpsmods.bright.registry.BrightItems;
 import net.fabricmc.api.ModInitializer;
 
-// TODO - Add recipes
+// TODO: Use data generator to create recipes and loot tables.
 public class Bright implements ModInitializer {
 
 	public static final String MOD_ID = "bright";

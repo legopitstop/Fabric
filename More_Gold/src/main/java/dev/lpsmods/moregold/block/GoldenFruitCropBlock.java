@@ -10,7 +10,6 @@ public class GoldenFruitCropBlock extends CropBlock {
         super(settings);
     }
 
-    @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
         return new ItemStack(this);
     }

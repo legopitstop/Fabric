@@ -8,7 +8,7 @@
 		"legopitstop"
 	],
 	"contact": {
-		"homepage": "https://legopitstop.weebly.com",
+		"homepage": "https://lpsmods.dev",
 		"sources": "https://github.com/legopitstop/Fabric",
 		"issues": "https://github.com/legopitstop/Fabric/issues"
 	},
@@ -17,20 +17,20 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.legopitstop.moregold.MoreGold"
+			"dev.lpsmods.moregold.MoreGold"
 		],
 		"fabric-datagen": [
-			"dev.legopitstop.moregold.MoreGoldDataGenerator"
+			"dev.lpsmods.moregold.MoreGoldDataGenerator"
 		],
 		"client": [
-			"dev.legopitstop.moregold.MoreGoldClient"
+			"dev.lpsmods.moregold.MoreGoldClient"
 		]
 	},
 	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "1.20.4",
-		"java": ">=17",
+		"minecraft": "1.21",
+		"java": ">=21",
 		"fabric-api": "*",
 		"morefood": ">=0.0.2"
 	},

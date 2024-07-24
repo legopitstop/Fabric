@@ -84,7 +84,7 @@ public class CanBlock extends Block implements Waterloggable {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(CANS, WATERLOGGED);
     }
-    @Override
+
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         return false;
     }

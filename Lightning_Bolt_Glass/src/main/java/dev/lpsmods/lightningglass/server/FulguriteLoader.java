@@ -18,7 +18,7 @@ import java.util.Map;
 import java.util.Optional;
 
 public class FulguriteLoader implements SimpleSynchronousResourceReloadListener {
-    public static final Identifier ID = new Identifier(LightningGlass.MOD_ID, "fulgurites");
+    public static final Identifier ID = Identifier.of(LightningGlass.MOD_ID, "fulgurite");
     @Override
     public Identifier getFabricId() {
         return ID;
@@ -27,10 +27,10 @@ public class FulguriteLoader implements SimpleSynchronousResourceReloadListener 
     @Override
     public void reload(ResourceManager manager) {
         FulguriteRegistry.clearFulgurites();
-        LightningGlass.LOGGER.info("Loading fulgurites...");
-        Map<Identifier, Resource> resources = manager.findResources("fulgurites", (identifier) -> identifier.getPath().endsWith(".json"));
+        LightningGlass.LOGGER.info("Loading fulgurite...");
+        Map<Identifier, Resource> resources = manager.findResources("fulgurite", (identifier) -> identifier.getPath().endsWith(".json"));
         for (Identifier resourceId : resources.keySet()) {
-            Identifier id = resourceId.withPath(resourceId.getPath().replace("fulgurites/", "").replace(".json", ""));
+            Identifier id = resourceId.withPath(resourceId.getPath().replace("fulgurite/", "").replace(".json", ""));
             try {
                 JsonObject jsonObj = (JsonObject) JsonParser.parseReader(new InputStreamReader(resources.get(resourceId).getInputStream()));
                 String string = JsonHelper.getString(jsonObj, "type");
@@ -41,6 +41,6 @@ public class FulguriteLoader implements SimpleSynchronousResourceReloadListener 
                 LightningGlass.LOGGER.error("Failed to load "+id+": "+e);
             }
         }
-        LightningGlass.LOGGER.info("Loaded ("+FulguriteRegistry.sizeFulgurite()+") fulgurites");
+        LightningGlass.LOGGER.info("Loaded ("+FulguriteRegistry.sizeFulgurite()+") fulgurite");
     }
 }

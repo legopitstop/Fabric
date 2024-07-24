@@ -8,7 +8,7 @@
 		"legopitstop"
 	],
 	"contact": {
-		"homepage": "https://legopitstop.weebly.com",
+		"homepage": "https://lpsmods.dev",
 		"sources": "https://github.com/legopitstop/Fabric",
 		"issues": "https://github.com/legopitstop/Fabric/issues"
 	},
@@ -17,12 +17,12 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.legopitstop.breaker.UltimateBlockBreaker"
+			"dev.lpsmods.breaker.UltimateBlockBreaker"
 		]
 	},
 	"depends": {
 		"fabricloader": ">=0.14.22",
-		"minecraft": "1.20.2",
+		"minecraft": "1.21",
 		"java": ">=17",
 		"fabric-api": "*"
 	}

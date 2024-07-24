@@ -6,13 +6,13 @@ Whenever lightning hits sand it turns into a glass
 
 ## Mod Data
 
-| Key         | Value     |
-|-------------|-----------|
-| supported   | `yes`     |
-| version     | `1.1.0 `  |
-| mc_version  | `1.20.4`  |
-| client_side | `optional`|
-| server_side | `required`|
+| Key         | Value      |
+|-------------|------------|
+| supported   | `yes`      |
+| version     | `1.2.0 `   |
+| mc_version  | `1.21`     |
+| client_side | `optional` |
+| server_side | `required` |
 
 ## LINKS
 - [Modrinth](https://modrinth.com/mod/lightning-bolt-glass)

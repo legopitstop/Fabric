@@ -7,5 +7,5 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class BrightBlockTags {
-    public static final TagKey<Block> CANDLE_STICKS = TagKey.of(RegistryKeys.BLOCK, new Identifier(Bright.MOD_ID, "candle_sticks"));
+    public static final TagKey<Block> CANDLE_STICKS = TagKey.of(RegistryKeys.BLOCK, Identifier.of(Bright.MOD_ID, "candle_sticks"));
 }

@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class FulguriteRegistry {
     public static final ConcurrentHashMap<Identifier, Fulgurite> FULGRUITE = new ConcurrentHashMap<>();
     public static void registerFulgurite(String id, Fulgurite fulgurite) {
-        FulguriteRegistry.FULGRUITE.put(new Identifier(id), fulgurite);
+        FulguriteRegistry.FULGRUITE.put(Identifier.of(id), fulgurite);
     }
     public static void registerFulgurite(Identifier id, Fulgurite fulgurite) {
         FulguriteRegistry.FULGRUITE.put(id, fulgurite);

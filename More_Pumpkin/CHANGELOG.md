@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [1.1.0] - unreleased
 ### General
+- Updated for Minecraft 1.21
+- Now uses java 21
 - Tags, recipes, and loot tables now auto generated.
 
 ### Fixes

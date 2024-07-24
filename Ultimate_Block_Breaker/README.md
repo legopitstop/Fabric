@@ -10,7 +10,7 @@ This mod adds different tiered block breakers to break any blocks (besides bedro
 |-------------|------------|
 | supported   | `yes`      |
 | version     | `1.0.0`    |
-| mc_version  | `1.20.4`   |
+| mc_version  | `1.21`     |
 | mod_id      | `breaker`  |
 | client_side | `required` |
 | server_side | `required` |

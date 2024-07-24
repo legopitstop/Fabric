@@ -1,5 +1,6 @@
 package dev.lpsmods.lightningglass.mixin;
 
+import dev.lpsmods.lightningglass.api.LightningHitCallback;
 import dev.lpsmods.lightningglass.registry.FulguriteRegistry;
 import net.minecraft.block.pattern.CachedBlockPosition;
 import net.minecraft.entity.LightningEntity;
@@ -30,7 +31,7 @@ public class LightningEntityMixin {
         if (entity.getWorld() instanceof ServerWorld) {
             BlockPos pos = entity.getBlockPos().down();
             CachedBlockPosition cachedBlock = new CachedBlockPosition(entity.getWorld(), pos, false);
-            FulguriteRegistry.generateFulgurite((ServerWorld)entity.getWorld(), cachedBlock);
+            LightningHitCallback.EVENT.invoker().onHit(entity, cachedBlock);
         }
     }
 }

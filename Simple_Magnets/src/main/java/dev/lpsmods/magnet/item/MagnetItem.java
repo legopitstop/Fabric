@@ -11,11 +11,11 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class MagnetItem extends ToolItem implements Vanishable {
+public class MagnetItem extends ToolItem {
     public double radius;
     public int delay;
 
-    public MagnetItem(ToolMaterial toolMaterial,double radius, int delay, Settings settings) {
+    public MagnetItem(ToolMaterial toolMaterial, Settings settings,double radius, int delay) {
         super(toolMaterial, settings);
         this.radius = radius;
         this.delay = delay;

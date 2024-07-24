@@ -10,7 +10,7 @@ This mod adds in recipes for spawn eggs. You can use the spawn egg to change any
 |-------------|----------------|
 | supported   | `yes`          |
 | version     | `1.0.0`        |
-| mc_version  | `1.20.4`       |
+| mc_version  | `1.21`         |
 | mod_id      | `spawnercraft` |
 | client_side | `unsupported`  |
 | server_side | `required`     |

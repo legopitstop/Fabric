@@ -10,7 +10,7 @@ This mod adds canned foods! You can place these blocks on the ground. You can ad
 |-------------|------------|
 | supported   | `yes`      |
 | version     | `1.0.0`    |
-| mc_version  | `1.20.4`   |
+| mc_version  | `1.21`     |
 | mod_id      | `canned`   |
 | client_side | `required` |
 | server_side | `required` |

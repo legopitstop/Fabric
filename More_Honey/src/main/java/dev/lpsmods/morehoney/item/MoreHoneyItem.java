@@ -22,7 +22,6 @@ public class MoreHoneyItem extends Item {
         }
 
         if (!world.isClient) {
-            System.out.println("remove poison");
             user.removeStatusEffect(StatusEffects.POISON);
         }
 

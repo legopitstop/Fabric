@@ -13,7 +13,7 @@ public class FulguriteTypes {
     public static final FulguriteType REPLACE_SINGLE_BLOCK;
 
     private static FulguriteType register(String id, Codec<? extends Fulgurite> codec) {
-        return register(new Identifier(id), codec);
+        return register(Identifier.of(id), codec);
     }
 
     public static FulguriteType register(Identifier id, Codec<? extends Fulgurite> codec) {
@@ -21,7 +21,7 @@ public class FulguriteTypes {
     }
 
     public static FulguriteType get(String string) {
-        FulguriteType type = FulguriteTypes.INSTANCE.getOrDefault(new Identifier(string), null);
+        FulguriteType type = FulguriteTypes.INSTANCE.getOrDefault(Identifier.of(string), null);
         if (type == null) {
             throw new JsonSyntaxException("Unknown fulgurite type '" + string + "'");
         }

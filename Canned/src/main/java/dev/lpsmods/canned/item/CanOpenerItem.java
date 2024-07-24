@@ -5,6 +5,10 @@ import com.google.common.collect.Multimap;
 import dev.lpsmods.canned.registry.CannedItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.AttributeModifiersComponent;
+import net.minecraft.component.type.ToolComponent;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -18,16 +22,19 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class CanOpenerItem extends ToolItem implements Vanishable {
-    private final float attackDamage;
-    private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
-    public CanOpenerItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        super(toolMaterial, settings);
-        this.attackDamage = (float)attackDamage + toolMaterial.getAttackDamage();
-        ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
-        builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", (double)this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
-        builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", (double)attackSpeed, EntityAttributeModifier.Operation.ADDITION));
-        this.attributeModifiers = builder.build();
+import java.util.List;
+
+public class CanOpenerItem extends ToolItem {
+    public CanOpenerItem(ToolMaterial toolMaterial, Settings settings) {
+        super(toolMaterial, settings.component(DataComponentTypes.TOOL, createToolComponent()));
+    }
+
+    private static ToolComponent createToolComponent() {
+        return new ToolComponent(List.of(ToolComponent.Rule.ofAlwaysDropping(List.of(Blocks.COBWEB), 15.0F), ToolComponent.Rule.of(BlockTags.SWORD_EFFICIENT, 1.5F)), 1.0F, 2);
+    }
+
+    public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material, int baseAttackDamage, float attackSpeed) {
+        return AttributeModifiersComponent.builder().add(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(BASE_ATTACK_DAMAGE_MODIFIER_ID, (double)((float)baseAttackDamage + material.getAttackDamage()), EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.MAINHAND).add(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(BASE_ATTACK_SPEED_MODIFIER_ID, (double)attackSpeed, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.MAINHAND).build();
     }
 
     @Override
@@ -41,23 +48,19 @@ public class CanOpenerItem extends ToolItem implements Vanishable {
             ItemStack stack = new ItemStack(((CanFoodItem) offHand.getItem()).getResultItem(), 8);
             user.giveItemStack(stack);
             user.giveItemStack(new ItemStack(CannedItems.CAN));
-            mainHand.damage(1, user, (player) -> user.sendToolBreakStatus(user.getActiveHand()));
+            mainHand.damage(1, user, EquipmentSlot.MAINHAND);
             offHand.decrement(1);
             return TypedActionResult.success(mainHand);
         }
         return super.use(world, user, hand);
     }
 
-    public float getAttackDamage() {
-        return this.attackDamage;
-    }
 
     @Override
     public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
         return !miner.isCreative();
     }
 
-    @Override
     public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
         if (state.isOf(Blocks.COBWEB)) {
             return 15.0f;
@@ -67,28 +70,14 @@ public class CanOpenerItem extends ToolItem implements Vanishable {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        stack.damage(1, attacker, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         return true;
     }
 
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (state.getHardness(world, pos) != 0.0f) {
-            stack.damage(2, miner, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+            stack.damage(2, miner, EquipmentSlot.MAINHAND);
         }
         return true;
-    }
-
-    @Override
-    public boolean isSuitableFor(BlockState state) {
-        return state.isOf(Blocks.COBWEB);
-    }
-
-    @Override
-    public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
-        if (slot == EquipmentSlot.MAINHAND) {
-            return this.attributeModifiers;
-        }
-        return super.getAttributeModifiers(slot);
     }
 }

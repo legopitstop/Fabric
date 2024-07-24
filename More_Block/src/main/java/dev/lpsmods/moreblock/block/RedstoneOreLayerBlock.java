@@ -1,9 +1,6 @@
 package dev.lpsmods.moreblock.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.RedstoneTorchBlock;
-import net.minecraft.block.Waterloggable;
+import net.minecraft.block.*;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -24,6 +21,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -104,11 +102,9 @@ public class RedstoneOreLayerBlock extends LayerBlock implements Waterloggable {
 
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack tool, boolean dropExperience) {
         super.onStacksDropped(state, world, pos, tool, dropExperience);
-        if (dropExperience && EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, tool) == 0) {
-            int i = 1 + world.random.nextInt(5);
-            this.dropExperience(world, pos, i);
+        if (dropExperience) {
+            this.dropExperienceWhenMined(world, pos, tool, UniformIntProvider.create(1, 5));
         }
-
     }
 
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
