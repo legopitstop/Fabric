@@ -28,7 +28,7 @@ import java.util.Map;
 
 @Mixin(ArmorStandEntity.class)
 public abstract class ArmorStandEntityMixin {
-    private Identifier DEFAULT_POSE_TYPE = Identifier.of("default");
+    private Identifier DEFAULT_POSE_TYPE = new Identifier("default");
     private Identifier poseType = DEFAULT_POSE_TYPE;
     private int lastPower;
     private int power;
@@ -37,7 +37,7 @@ public abstract class ArmorStandEntityMixin {
     public void init(CallbackInfo io) {
         ArmorStandEntity entity = (ArmorStandEntity)(Object)this;
         if (!entity.getWorld().isClient()) {
-            this.setPoseType(Identifier.of("default"), false);
+            this.setPoseType(new Identifier("default"), false);
         }
     }
 
@@ -54,7 +54,7 @@ public abstract class ArmorStandEntityMixin {
 
     @Inject(at=@At(value="TAIL"), method="readCustomDataFromNbt")
     private void readNbt(NbtCompound nbt, CallbackInfo ci) {
-        this.poseType = Identifier.of(nbt.getString("PoseType"));
+        this.poseType = new Identifier(nbt.getString("PoseType"));
         this.power = nbt.getInt("Power");
     }
 
@@ -77,7 +77,7 @@ public abstract class ArmorStandEntityMixin {
     }
 
     public Identifier setNextPoseType(boolean notify, CallbackInfoReturnable<ActionResult> cir) {
-        Identifier pose = Identifier.of("default");
+        Identifier pose = new Identifier("default");
         ArrayList<Identifier> list = new ArrayList<Identifier>();
         for (Map.Entry<Identifier, ArmorStandPose> entry : PoseRegistry.INSTANCE.entrySet()) {
             list.add(entry.getKey());

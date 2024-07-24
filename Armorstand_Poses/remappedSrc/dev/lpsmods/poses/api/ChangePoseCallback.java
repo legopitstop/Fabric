@@ -5,9 +5,6 @@ import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
 import net.minecraft.entity.decoration.ArmorStandEntity;
 
-/**
- * Callback for when the armor stand's pose gets changed.
- */
 public interface ChangePoseCallback {
     Event<ChangePoseCallback> EVENT = EventFactory.createArrayBacked(ChangePoseCallback.class, (listeners) -> (ArmorStandEntity entity, ArmorStandPose pose) -> {
         for (ChangePoseCallback listener : listeners) {

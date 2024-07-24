@@ -1,4 +1,4 @@
-# [<](../README.md) Template
+# [<](../README.md) Armor Stand Poses
 
 ![alt](icon.png)
 
@@ -9,8 +9,8 @@ Bedrock armor stand poses for Java Edition.
 | Key         | Value      |
 |-------------|------------|
 | supported   | `yes`      |
-| version     | `1.0.0 `   |
-| mc_version  | `1.20.4`   |
+| version     | `1.2.0 `   |
+| mc_version  | `1.21`     |
 | client_side | `optional` |
 | server_side | `required` |
 

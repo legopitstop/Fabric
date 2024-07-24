@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Optional;
 
 public class ArmorStandPoseLoader implements SimpleSynchronousResourceReloadListener {
-    public static final Identifier ID = Identifier.of(ArmorStandPoses.MOD_ID, "poses");
+    public static final Identifier ID = new Identifier(ArmorStandPoses.MOD_ID, "poses");
     @Override
     public Identifier getFabricId() {
         return ID;
